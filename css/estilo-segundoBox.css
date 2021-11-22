@@ -1,0 +1,90 @@
+.boxInovamaps{
+    background-color: #3592ff;
+    padding: 20px 80px 50px 80px;
+    display: inline-block;
+    color: white;
+}
+
+.boxInovamaps .box1{
+    float: left;
+    width: 60%;
+}
+
+.boxInovamaps .box1 .tituloMenu{
+    text-transform: uppercase;
+    font-size: 18px;
+    color: white;
+}
+
+.boxInovamaps .box1 .tituloDestaque{
+    text-transform: uppercase;
+    font-size: 50px;
+    color: white;
+}
+
+.boxInovamaps .box1 .texto{
+    margin-top: 25px;
+    line-height: 26px;
+    color: white;
+}
+
+.boxInovamaps .box1 .btn{
+    height: 50px;
+    margin-top: 45px;
+}
+
+.boxInovamaps .box1 .btn .btnBox{
+    text-transform: uppercase;
+    background-color: white;
+    color: #6319ff;
+    padding: 15px 60px 15px 60px;
+    border-radius: 5px;   
+}
+
+.boxInovamaps .box1 .btn .btnBox:hover{
+    background-color: rgba(255, 255, 255, 0.658);
+}
+
+/*Comandos Box 2*/
+.boxInovamaps .box2{
+    float: left;
+    width: 40%;
+    
+}
+
+.boxInovamaps .box2 .box2-1{
+    border: solid 4px white;
+    border-radius: 5px;
+    width: 45%;
+    height: 150px;
+    margin: 10px;
+    display: flex;
+    float: left;
+}
+
+.boxInovamaps i{
+    color: white;
+}
+
+.boxInovamaps .icon{
+    font-size: 40px;
+    padding: 40px 20px 50px 20px;
+    float: left;
+}
+
+.boxInovamaps .box2-1 .valor{
+    font-size: 40px;
+    text-align: center;
+    display: block;
+    padding-top: 15px ;
+    font-family: 'Exo3';
+    color: white;
+}
+
+.boxInovamaps .box2-1 .texto{
+    text-align: center;
+    font-size: 19px;
+    display: block;
+    color: white;
+}
+

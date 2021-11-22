@@ -1,0 +1,25 @@
+*{
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+    box-sizing: border-box;
+    font-family: 'Exo 2', sans-serif;
+    color: #443d3d;
+}
+
+@font-face {
+    font-family: 'Exo3';
+    src: url('../fontes/static/Exo2-Bold.ttf');
+}
+
+
+
+ul li{
+    display: inline-block;
+}
+
+ul li a{
+    cursor: pointer;
+    text-transform: uppercase;
+    font-family: 'Exo3';
+}
