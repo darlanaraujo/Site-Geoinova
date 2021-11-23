@@ -7,13 +7,13 @@ function ativaScrollSuave(selector) {
         
         $('html, body').animate({
             scrollTop: $(target).offset().top
-        }, 500)
+        }, 1000)
     });
 }
 
 ativaScrollSuave('a[href*=topo]');
 ativaScrollSuave('a[href*=boxSolucoes]');
 ativaScrollSuave('a[href*=boxInovamaps]');
-ativaScrollSuave('a[href*=boxSolucoes]');
-ativaScrollSuave('a[href*=boxSolucoes]');
+ativaScrollSuave('a[href*=boxSobre]');
+ativaScrollSuave('a[href*=boxContato]');
 ativaScrollSuave('a[href*=boxSolucoes]');

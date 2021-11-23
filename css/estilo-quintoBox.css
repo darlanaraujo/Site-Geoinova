@@ -7,7 +7,7 @@
 /*Comandos Box1*/
 .boxNoticias .box1{
     float: left;
-    width: 55%;
+    width: 50%;
 }
 
 .boxNoticias .boxTexto .tituloDestaque{
@@ -37,9 +37,9 @@
 
 /*Comandos Box2*/
 .boxNoticias .box2{
-    float: left;
+    float: right;
     width: 45%;
-    margin-left: 20px;
+    margin-left: 30px;
     background-color: #333333;
 
 }
