@@ -6,14 +6,15 @@
 
 /*Comandos do Box3*/
 .boxSegmentos .box1{
-
     width: 45%;
+    display: inline-flex;
     float: left;
+    text-align: center;
 }
 
 .boxSegmentos li{
     display: block;
-    width: 250px;
+    width: 200px;
     height: 90px;
     text-align: left;
     padding-left: 20px;
@@ -28,15 +29,15 @@
 
 .boxSegmentos a{
     vertical-align: baseline;
-    margin-left: 25px;
+    margin-left: 15px;
     color: #443d3d;
-    font-size: 20px;
+    font-size: 18px;
     text-transform: none;
     font-family: 'Exo3';
 }
 
 .boxSegmentos i{
-    font-size: 40px;
+    font-size: 35px;
     color: #00cbe4;
 }
 
@@ -62,8 +63,93 @@
 
 /*Comandos do Box2*/
 .boxSegmentos .box2{
-    border: solid 1px;
     width: 52%;
     float: left;
-    margin-left: 10px;
+    margin-left: 20px;
+}
+
+.boxSegmentos .titulo{
+    font-size: 18px;
+    color: #00cbe4;
+    text-transform: uppercase;
+}
+
+.boxSegmentos .tituloDestaque{
+    font-size: 40px;
+}
+
+.boxSegmentos .texto{
+    margin-top: 20px;
+    font-size: 14px;
+    line-height: 22px;
+}
+
+.boxSegmentos .checkList{
+    margin-top: 20px;
+    font-size: 14px;
+}
+
+.boxSegmentos .checkList i{
+    font-size: 20px;
+    margin-right: 10px;
+    margin-bottom: 10px;
+    border: solid 4px #00c9e49a;
+    border-radius: 100%;
+}
+
+.boxSegmentos .btn{
+    margin-top: 40px;
+    height: 40px;
+}
+
+.boxSegmentos .btnBox{
+    margin: 0;
+    padding: 0;
+    padding: 12px 25px 12px 25px;
+    border: solid 1px #00cbe4;
+    border-radius: 5px;
+    color: white;
+    text-transform: uppercase;
+    font-size: 14px;
+    background-image: linear-gradient(to right, #00cbe4, #00ecff); /*efeito degradé*/
+    
+}
+
+/*Comandos media query*/
+@media (max-width: 1100px){
+    .boxSegmentos{
+        transition: 1s;
+        display: block;
+    }
+
+    .boxSegmentos .box1{
+        margin: 0;
+        padding: 0;
+        float: none;
+        width: 100%;
+        transition: 1s;
+    }
+
+    .boxSegmentos .box2{
+        margin: 0;
+        padding: 0;
+        float: none;
+        width: 100%;
+        transition: 1s;
+    }
+
+    .boxSegmentos .box1 li{
+        display: inline-flex;
+        float: left;
+        margin-left: 20px;
+        transition: 1s;
+    }
+}
+
+@media (max-width: 550px){
+    .boxSegmentos{
+        padding: 20px 20px 50px 20px;
+        display: inline-block;
+        
+    }
 }

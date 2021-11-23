@@ -2,6 +2,8 @@
     text-align: center;
     padding-top: 30px;
     padding-bottom: 50px;
+    padding-left: 80px;
+    padding-right: 80px;
 }
 
 .boxSolucoes .tituloMenu{
@@ -39,7 +41,6 @@
 .conteudoBox{
     margin-top: 30px;
     text-align: left;
-    padding: 10px 80px 10px 80px;
     display: inline-flex;
     width: 100%;
 }
@@ -130,5 +131,12 @@
     .menuBox a{
         display: block;
         
+    }
+}
+
+@media (max-width: 550px){
+    .boxSolucoes{
+        padding-left: 20px;
+        padding-right: 20px;
     }
 }
