@@ -11,6 +11,9 @@
     <link rel="stylesheet" href="css/estilo-primeiroBox.css">
     <link rel="stylesheet" href="css/estilo-segundoBox.css">
     <link rel="stylesheet" href="css/estilo-terceiroBox.css">
+    <link rel="stylesheet" href="css/estilo-quartoBox.css">
+    <link rel="stylesheet" href="css/estilo-quintoBox.css">
+    <link rel="stylesheet" href="css/estilo-sextoBox.css">
 
     <!--Importação de fonte do Google-->
     <link href="https://fonts.googleapis.com/css2?family=Exo+2:wght@300&display=swap" rel="stylesheet">
@@ -25,7 +28,7 @@
     <title>Geoinova Soluções</title>
 </head>
 <body>
-    <div class="topo">
+    <div class="topo" id="topo">
         <header>
             <nav>
                 <figure class="logo">
@@ -33,9 +36,9 @@
                 </figure>
 
                 <ul class="menuTopo">
-                    <li><a href="#">Home</a></li>
-                    <li><a href="#">Soluções</a></li>
-                    <li><a href="#">Conheça o Inovamaps</a></li>
+                    <li><a href="#topo">Home</a></li>
+                    <li><a href="#boxSolucoes">Soluções</a></li>
+                    <li><a href="#boxInovamaps">Conheça o Inovamaps</a></li>
                     <li><a href="#">Sobre</a></li>
                     <li><a href="#">Solicitar Contato</a></li>
                     <li><a href="#">Trabalhe Conosco</a></li>
@@ -238,20 +241,71 @@
     </div>
 
     <!--Quarto Box-->
-    <div class="boxInovamaps2">
-        <section>
-            <h2>Inovamaps</h2>
-            <h1>Conheça Mais Sobre Essa Solução</h1>
+    <div class="boxTelas">
+        <section class="box1">
+            <h2 class="tituloMenu">Inovamaps</h2>
+            <h1 class="tituloDestaque">Conheça Mais Sobre Essa Solução</h1>
             <div class="texto">
                 <p>Monitore áreas e seja notificado caso seja</p>
                 <p>detectado algum problema no local</p>
             </div>
         </section>
-
-        <figure>
-            <img src="" alt="">
-        </figure>
+        <section class="box2">
+            <figure class="imagem">
+                <img src="img/tela1.jpg" alt="[Tela Principal Inovamaps]" title="Tela Principal Inovamaps">
+                <p>Tela principal do Inovamaps</p>
+            </figure>
+        </section>
+        <section class="box3">
+            <a href="#"><i class="fas fa-angle-left"></i></a>
+            <a href="#"><i class="fas fa-angle-right"></i></a>
+        </section>
+    </div>
+    
+    <!--Quinto Box-->
+    <div class="boxNoticias">
+        <section class="box1">
+            <div class="boxTexto">
+                <h2 class="tituloDestaque">O que estão falando sobre a Geoinova e suas soluções.</h2>
+                <p class="texto">Veja as matérias e notícias que a imprensa divulgou sobre a Geoiniva e sua
+                    solução Inovamaps. Produto que tem gerado economia para grande indústrias. 
+                </p>
+            </div>
+            <div class="boxImagem">
+                <figure>
+                    <img src="img/investe.png" alt="[Logo Investe]" title="Logo Investe">
+                    <img src="img/portal-mineracao.png" alt="[Logo Portal Mineração]" title="Logo Portal Mineração">
+                    <img src="img/globo.png" alt="[Logo Globo.com]" title="Logo Globo.com">
+                </figure>
+            </div>
+        </section>
+            
+        <section class="box2">
+            <video src="https://geoinova.com.br/videos/video1.mp4"></video>
+            <a href="https://g1.globo.com/jornal-nacional/noticia/2019/01/11/de-olho-na-recuperacao-economia-empresas-buscam-jovens-boas-ideias.ghtml" target="_blank">Veja o vídeo na íntegra</a>
+        </section>
     </div>
 
+    <!--Sexto Box-->
+    <div class="boxSobre" id="boxSobre">
+        <section class="box1">
+            <h2 class="tituloMenu">Sobre</h2>
+            <h1 class="tituloDestaque">Saiba Mais Sobre A Geoinova</h1>
+            <div class="texto">
+                <p>Uma empresa especialista em desenvolver soluções inovadoras</p>
+                <p>com o uso de tecnologia de georreferenciamento</p>
+            </div>
+        </section>
+
+        <section class="box2">
+            <p class="texto">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Sed incidunt molestias reprehenderit accusantium, dolorum laboriosam sunt fuga aut.
+                Dolor numquam quam consequatur velit fugit reiciendis in eaque facere aliquam nihil. Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+                Sed incidunt molestias reprehenderit accusantium, dolorum laboriosam sunt fuga aut. Dolor numquam quam consequatur velit fugit reiciendis
+                in eaque facere aliquam nihil.</p>
+        </section>
+    </div>
+
+    <script src="js/jquery.js"></script>
+    <script src="js/index.js"></script>
 </body>
 </html>

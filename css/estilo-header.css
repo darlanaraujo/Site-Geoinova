@@ -136,6 +136,9 @@ nav ul li a:hover{
     text-align: center;
 }
 
+/*Animação Topo*/
+
+
 /*Comandos media query*/
 @media (max-width: 1210px){
     *{

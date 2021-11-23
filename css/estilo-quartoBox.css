@@ -1,0 +1,59 @@
+.boxTelas{
+    display: block;
+    padding: 25px 80px 25px 80px;
+    background-color: #f2f9ff;
+    text-align: center;
+}
+
+.boxTelas .tituloMenu{
+    font-size: 18px;
+    text-transform: uppercase;
+}
+
+.boxTelas .tituloDestaque{
+    font-size: 40px;
+}
+
+.boxTelas .texto{
+    margin-top: 15px;
+    margin-bottom: 50px;
+}
+
+.boxTelas .box2 .imagem{
+    background-color: white;
+    margin: 0;
+    padding: 0;
+    display: inline-block;
+    float: none;
+    max-width: 650px;
+    width: 100%;
+}
+
+.boxTelas .box3{
+    
+}
+
+.boxTelas .box3{
+    margin-top: 40px;
+}
+
+.boxTelas .box3 a{
+    background-image: linear-gradient(to right, #00cbe4, #00ecff);
+    border-radius: 5px;
+    padding: 5px 15px 10px 15px;
+    margin: 10px;
+}
+
+.boxTelas .box3 i{
+    color: white;
+    font-size: 25px;
+    vertical-align: middle;
+}
+
+/*Comandos media query*/
+@media (max-width: 550px){
+    .boxTelas{
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+}

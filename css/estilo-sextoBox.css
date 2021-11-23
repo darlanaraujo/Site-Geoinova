@@ -1,0 +1,41 @@
+.boxSobre{
+    background-color: #f2f9ff;
+    padding: 25px 80px 60px 80px;
+}
+
+.boxSobre .box1{
+    text-align: center;
+}
+
+.boxSobre .box1 .tituloMenu{
+    font-size: 18px;
+    text-transform: uppercase;
+    
+}
+
+.boxSobre .box1 .tituloDestaque{
+    font-size: 40px;
+    margin-top: 15px;
+
+}
+
+.boxSobre .box1 .texto{
+    margin-top: 20px;
+    line-height: 25px;
+}
+
+/*Comandos Box2*/
+.boxSobre .box2{
+    margin-top: 70px;
+    padding-left: 10%;
+    padding-right: 10%;
+}
+
+.boxSobre .box2 .texto{
+    background-color: white;
+    padding: 40px 20px 40px 20px;
+    border-radius: 3px;
+    box-shadow: 1px 1px 15px rgba(0, 0, 0, 0.247);
+    line-height: 30px;
+    
+}
