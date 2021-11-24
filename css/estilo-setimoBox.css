@@ -5,7 +5,7 @@
 }
 
 .boxContato .box1{
-    display: flex;
+    display: inline-flex;
     float: left;
     padding-left: 12%;
     padding-right: 12%;
@@ -36,21 +36,20 @@
     float: left;
     padding-top: 80px;
     padding-bottom: 60px;
-    border: solid 1px;
+    width: 100%;
 }
 
 .boxContato .box2 .boxMapa{
     width: 50%;
-    padding: 0 30px 0 30px;
+    padding-right: 20px;
 }
 
 .boxContato .box2 .boxMapa iframe{
-    
     width: 100%;
-    height: 100%;
+    
 }
 
-.boxContato .box2 .boxFormulario{
+.boxContato .box2 .boxFormulario{    
     width: 50%;
 }
 
@@ -68,8 +67,25 @@
     margin-top: 40px;
 }
 
-.boxContato input, select{
-    width: 90%;
+.boxFormulario .fundo{
+    background-color: #f6f6f6;
+    width: 100%;
+    border-radius: 5px;
+    margin-bottom: 10px;
+}
+
+.boxContato input, select, textarea{
+    width: 100%;
+    font-size: 18px;
+    height: 50px;
+    padding: 10px;
+    background: transparent;
+    border: none;
+    
+}
+
+.boxFormulario textarea{
+    height: 150px;
 }
 
 .boxContato .btn{
@@ -92,6 +108,32 @@
     }
 
     .boxContato .box1 .box{
+        width: 100%;
+    }
+
+    
+}
+
+@media (max-width: 1000px){
+    .boxContato .box2{
+        display: inline-block;
+        float: none;
+        width: 100%;
+    }
+
+    .boxContato .box2 .boxMapa{
+        float: none;
+        width: 100%;
+        padding: 0;
+    }
+
+    .boxContato .box2 .boxFormulario{
+        float: none;
+        width: 100%;
+        margin-top: 25px;
+    }
+
+    .boxContato .box2 .fundo{
         width: 100%;
     }
 }

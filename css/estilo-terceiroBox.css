@@ -14,7 +14,7 @@
 
 .boxSegmentos li{
     display: block;
-    width: 200px;
+    width: 100%;
     height: 90px;
     text-align: left;
     padding-left: 20px;
@@ -119,7 +119,7 @@
 @media (max-width: 1100px){
     .boxSegmentos{
         transition: 1s;
-        display: block;
+        display: inline-block;
     }
 
     .boxSegmentos .box1{
@@ -128,6 +128,13 @@
         float: none;
         width: 100%;
         transition: 1s;
+        
+    }
+
+    .boxSegmentos .box1 .menu1, .boxSegmentos .box1 .menu2{
+        display: flex;
+        text-align: center;
+        width: 100%;
     }
 
     .boxSegmentos .box2{
@@ -146,10 +153,22 @@
     }
 }
 
+@media (max-width: 1000px){
+    .boxSegmentos .box1 .menu1, .boxSegmentos .box1 .menu2{
+        display: block;
+        width: 100%;
+    }
+}
+
 @media (max-width: 550px){
     .boxSegmentos{
-        padding: 20px 20px 50px 20px;
-        display: inline-block;
-        
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+
+    .box1, .menu1, .box1 .menu2{
+        margin: 0;
+        padding: 0;
+        padding-right: 20px;
     }
 }

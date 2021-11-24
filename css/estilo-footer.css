@@ -1,0 +1,18 @@
+.rodape{
+    padding: 30px 80px 30px 80px;
+    margin-bottom: 25px;
+}
+
+.rodape .midias{
+    display: inline-flex;
+    float: left;
+}
+
+.rodape .midias a{
+    margin-right: 25px;
+    font-size: 25px;
+}
+
+.rodape .direitos{
+    float: right;
+}
