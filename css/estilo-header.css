@@ -182,6 +182,10 @@ nav ul li a:hover{
         padding-right: 20px;
     }
 
+    .containerConteudo .titulo{
+        font-size: 30px;
+    }
+
     .botaoHeader{
         display: block;
     }

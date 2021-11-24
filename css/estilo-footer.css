@@ -15,4 +15,22 @@
 
 .rodape .direitos{
     float: right;
+    font-size: 18px;
+}
+
+@media (max-width: 550px){
+    .rodape{
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+
+    .rodape .midias, .rodape .direitos{
+        display: block;
+        float: none;
+    }
+
+    .rodape .midias{
+        margin-bottom: 10px;
+        text-align: center;
+    }
 }
