@@ -3,13 +3,16 @@
     padding: 0;
     text-decoration: none;
     box-sizing: border-box;
-    font-family: 'Exo 2', sans-serif;
+    font-family: 'Exo1', sans-serif;
     color: #443d3d;
 }
 
 @font-face {
     font-family: 'Exo3';
     src: url('../fontes/static/Exo2-Bold.ttf');
+
+    font-family: 'Exo1';
+    src: url("../fontes/static/Exo2-SemiBold.ttf");
 }
 
 
@@ -21,5 +24,5 @@ ul li{
 ul li a{
     cursor: pointer;
     text-transform: uppercase;
-    font-family: 'Exo3';
+    font-family: 'Exo1';
 }
