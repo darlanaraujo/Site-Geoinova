@@ -11,10 +11,13 @@
     font-family: 'Exo3';
     src: url('../fontes/static/Exo2-Bold.ttf');
 
+    
+}
+
+@font-face {
     font-family: 'Exo1';
     src: url("../fontes/static/Exo2-SemiBold.ttf");
 }
-
 
 
 ul li{
