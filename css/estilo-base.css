@@ -1,31 +1,16 @@
 *{
     margin: 0;
     padding: 0;
-    text-decoration: none;
+    color: #343a40;
+    font-family: 'open-sans';
     box-sizing: border-box;
-    font-family: 'Exo1', sans-serif;
-    color: #443d3d;
+    text-decoration: none;
+    list-style: none;
 }
+
+
 
 @font-face {
-    font-family: 'Exo3';
-    src: url('../fontes/static/Exo2-Bold.ttf');
-
-    
-}
-
-@font-face {
-    font-family: 'Exo1';
-    src: url("../fontes/static/Exo2-SemiBold.ttf");
-}
-
-
-ul li{
-    display: inline-block;
-}
-
-ul li a{
-    cursor: pointer;
-    text-transform: uppercase;
-    font-family: 'Exo1';
+    font-family: 'open-sans';
+    src: url('../fontes/Open_Sans/static/OpenSans/OpenSans-Medium.ttf');
 }
