@@ -1,0 +1,46 @@
+.rodape{
+    padding: 30px 60px 30px 60px;
+    margin-bottom: 25px;
+}
+
+.rodape .midias{
+    display: inline-flex;
+    float: left;
+}
+
+.rodape .midias a{
+    margin-right: 25px;
+    font-size: 25px;
+}
+
+.rodape .direitos{
+    float: right;
+    font-size: 17px;
+}
+
+@media (max-width: 700px){
+    .rodape .midias a{
+        font-size: 20px;
+    }
+    
+    .rodape .direitos{
+        font-size: 15px;
+    }
+}
+
+@media (max-width: 550px){
+    .rodape{
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+
+    .rodape .midias, .rodape .direitos{
+        display: block;
+        float: none;
+    }
+
+    .rodape .midias{
+        margin-bottom: 10px;
+        text-align: center;
+    }
+}

@@ -5,39 +5,655 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <!--Importação do estilo-->
+    <!--Importação CSS-->
     <link rel="stylesheet" href="css/estilo-base.css">
-    <link rel="stylesheet" href="css/estilo-topo.css">
+    <link rel="stylesheet" href="css/estilo-header.css">
+    <link rel="stylesheet" href="css/estilo-primeiroBox.css">
+    <link rel="stylesheet" href="css/estilo-segundoBox.css">
+    <link rel="stylesheet" href="css/estilo-terceiroBox.css">
+    <link rel="stylesheet" href="css/estilo-quartoBox.css">
+    <link rel="stylesheet" href="css/estilo-quintoBox.css">
+    <link rel="stylesheet" href="css/estilo-sextoBox.css">
+    <link rel="stylesheet" href="css/estilo-setimoBox.css">
+    <link rel="stylesheet" href="css/estilo-oitavoBox.css">
+    <link rel="stylesheet" href="css/estilo-footer.css">
 
-    <!--Importação do Icone do navegador-->
+    <!--Importação de fonte do Google-->
+    <link href="https://fonts.googleapis.com/css2?family=Exo+2:wght@300&display=swap" rel="stylesheet">
+
+    <!--Importação de imagens Fontawesome-->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css"
+    integrity="sha384-DyZ88mC6Up2uqS4h/KRgHuoeGwBcD4Ng9SiP4dIRy0EXTlnuz47vAwmeGwVChigm" crossorigin="anonymous">
+
+    <!--Icone do navegador-->
     <link rel="shortcut icon" href="img/icon.png" type="image/x-icon">
 
     <title>Geoinova Soluções</title>
 </head>
 <body>
-    <header class="topo">
-        <section class="boxTopo">
-            <nav class="menu">
+    <div class="topo" id="topo">
+        <header>
+            <nav id="nav">
+                
                 <figure class="logo">
-                    <img id="logo1" src="img/logo_geoinova_transparente.png" alt="[Logo Geoinova]" title="Logo Geoinova">
+                    <img src="img/logo_geoinova_transparente.png" alt="[Logo Geoinova]" title="Logo Geoinova">
                 </figure>
 
-                <ul class="menuTopo">
-                    <li><a href="#">Home</a></li>
-                    <li><a href="#">Soluções</a></li>
-                    <li><a href="#">Conheça o Inovamaps</a></li>
-                    <li><a href="#">Sobre</a></li>
-                    <li><a href="#">Solicitar Contato</a></li>
-                    <li><a href="#">Trabalhe Conosco</a></li>
+                <figure class="logo2">
+                    <img src="img/logo_site.png" alt="[Logo Geoinova]" title="Logo Geoinova">
+                </figure>
 
+                <input type="checkbox" name="" id="check">
+                <label for="check" class="btnMenuBar"><i class="fas fa-bars"></i></label>
+
+                <ul class="menuTopo">
+                    <li><a href="#topo">Home</a></li>
+                    <li><a href="#boxSolucoes">Soluções</a></li>
+                    <li><a href="#boxInovamaps">Conheça o Inovamaps</a></li>
+                    <li><a href="#boxSobre">Sobre</a></li>
+                    <li><a href="#boxContato">Solicitar Contato</a></li>
+                    <li><a href="https://jobs.recrutei.com.br/geoinova">Trabalhe Conosco</a></li>
                 </ul>
+
             </nav>
-            <section>Texto</section>
-            <aside>Imagem</aside>
+
+            <div class="containerConteudo" id="containerConteudo">
+                <section class="conteudo">
+                    <h1 class="titulo">Soluções em Geoprocessamento, <span class="negrito">monitoramento</span> e big data para sua empresa</h1>
+                    
+                    <p class="texto">O que você precisa para transformar a sua empresa?
+                        A Geoinova pode te ajudar. Para você que procura
+                        monitoramento de áreas via imagens de satélite,
+                        nós temos um produto pra você, conheça o Inovamaps.
+                        Caso a solução que você procura difere do produto já
+                        desenvolvido, podemos criar uma solução para o seu negócio
+                        de forma personalizada.</p>
+
+                    <div class="botaoHeader">
+                        <a class="btn1" href="#boxInovamaps">Conheça Inovamaps</a>
+                        <a class="btn2" href="#boxSolucoes">Ver Soluções</a>
+                    </div>
+                </section>
+                
+                <section>
+                    <figure class="imagem">
+                        <img src="https://geoinova.com.br/imagens/geoinova.svg" alt="[Imagem Geoinova]" title="Imagem Geoinova">
+                    </figure>
+                </section>
+            </div>
+        </header>
+    </div>
+
+    <!--Primeiro Box-->
+    <div class="boxSolucoes" id="boxSolucoes">
+        <section>
+            <h2 class="tituloMenu">Soluções</h2>
+            <h1 class="tituloDestaque">Conheça Mais Sobre Nossas Soluções</h1>
+            <div class="texto">
+                <p>Soluções voltadas ao setor de mineração, agronegócio, cadeia logística e</p>
+                <p>produção, negócios para a toma de decisão e gestão pública</p>
+            </div>
+            
+
+            <section class="menuBox">
+                <ul>
+                    <li><a data-menu="menuSolucoes" id="btnMineracao" href="#conteudoBox">Mineração e Agronegócio</a></li>
+                    <li><a data-menu="menuSolucoes" id="btnLogistica" href="#conteudoBox">Logística e Produção</a></li>
+                    <li><a data-menu="menuSolucoes" id="btnNegocio" href="#conteudoBox">Negócio em Geral</a></li>
+                    <li><a data-menu="menuSolucoes" id="btnGestao" href="#conteudoBox">Gestão Pública</a></li>
+                </ul>
+            </section>
+            
+            <div data-anime-solucoes="direita" id="telaMineracao" class="ocultar">
+                <section class="conteudoBox" id="#conteudoBox">
+                    <div class="box1">
+                        <figure>
+                            <img class="imagem" src="img/mineracao.jpg" alt="[Imagem Mineração]" title="Imagem Mineração">
+                        </figure>
+                    </div>
+
+                    <div class="box2">
+                        <section>
+                            <div class="box2-1">
+                                <figure>
+                                    <img class="icon" src="https://geoinova.com.br/imagens/svg/mineral.svg" alt="[Icone Mineração]" title="Icone Mineração">
+                                </figure>
+                            </div>
+                            <div class="box2-2">
+                                <figcaption>
+                                    <h2>Mineração e Agronegócio</h2>
+                                    <p>A indústria de mineração possui grandes desafios, um deles por exemplo está em aumentar a
+                                        produção de forma eficiente e com responsabilidade ambiental.</p>
+                                    
+                                    <p>O setor de agronegócio é uma área estratégica para o Brasil e a tecnologia é fundamental
+                                        para acompanhar as evoluções neste setor.</p>
+                                    
+                                    <p>Pensando nesses cenários, a Geoinova desenvolveu soluções nesses setores que permitem o
+                                        monitoramento ambiental de quaisquer tipos de áreas ou barragens.</p>
+                                </figcaption>
+                            </div>
+
+                            <div class="box2-3">
+                                <a href="#boxContato">Solicitar Contato</a>
+                            </div>
+                        </section>
+                    </div>
+                </section>
+            </div>
+
+            <div data-anime-solucoes="direita" id="telaLogistica" class="ocultar">
+                <section class="conteudoBox">
+                    <div class="box1">
+                        <figure>
+                            <img class="imagem" src="img/logistica.jpg" alt="[Imagem Logística]" title="Imagem Logística">
+                        </figure>
+                    </div>
+
+                    <div class="box2">
+                        <section>
+                            <div class="box2-1">
+                                <figure>
+                                    <img class="icon" src="data:image/svg+xml;utf8;base64,PD94bWwgdmVyc2lvbj0iMS4wIj8+CjxzdmcgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIiB2aWV3Qm94PSIwIC02NiA1MTIgNTEyIiB3aWR0aD0iMzJweCIgaGVpZ2h0PSIzMnB4Ij48cGF0aCBkPSJtNDMyIDMwMGMtMTEuMDUwNzgxIDAtMjAgOC45NDkyMTktMjAgMjBzOC45NDkyMTkgMjAgMjAgMjAgMjAtOC45NDkyMTkgMjAtMjAtOC45NDkyMTktMjAtMjAtMjB6bTAgMCIgZmlsbD0iI0ZGRkZGRiIvPjxwYXRoIGQ9Im00MjIgMjIwYy01LjUxOTUzMSAwLTEwIDQuNDgwNDY5LTEwIDEwczQuNDgwNDY5IDEwIDEwIDEwIDEwLTQuNDgwNDY5IDEwLTEwLTQuNDgwNDY5LTEwLTEwLTEwem0wIDAiIGZpbGw9IiNGRkZGRkYiLz48cGF0aCBkPSJtMTI2IDMwMGMtMTEuMDUwNzgxIDAtMjAgOC45NDkyMTktMjAgMjBzOC45NDkyMTkgMjAgMjAgMjAgMjAtOC45NDkyMTkgMjAtMjAtOC45NDkyMTktMjAtMjAtMjB6bTAgMCIgZmlsbD0iI0ZGRkZGRiIvPjxwYXRoIGQ9Im00NjkuOTY4NzUgMTgwLjY0MDYyNS0xNy4yNDIxODgtNjguOTY4NzVjNi4xMjg5MDctNS44NjMyODEgOS4yNzM0MzgtMTMuNjQwNjI1IDkuMjczNDM4LTIxLjY3MTg3NSAwLTE2LjU0Mjk2OS0xMy40NTcwMzEtMzAtMzAtMzBoLTgwdi0zMGMwLTE2LjU0Mjk2OS0xMy40NTcwMzEtMzAtMzAtMzBoLTI5MmMtMTYuNTQyOTY5IDAtMzAgMTMuNDU3MDMxLTMwIDMwdjI2MGMwIDE2LjU0Mjk2OSAxMy40NTcwMzEgMzAgMzAgMzBoMzZjMCAzMy4wODU5MzggMjYuOTE0MDYyIDYwIDYwIDYwczYwLTI2LjkxNDA2MiA2MC02MGgxODZjMCAzMy4wODU5MzggMjYuOTE0MDYyIDYwIDYwIDYwczYwLTI2LjkxNDA2MiA2MC02MGMwLS41NzAzMTItLjAyNzM0NC0xLjEzNjcxOS0uMDQyOTY5LTEuNzA3MDMxIDExLjY2MDE1Ny00LjExMzI4MSAyMC4wNDI5NjktMTUuMjQyMTg4IDIwLjA0Mjk2OS0yOC4yOTI5Njl2LTYwYzAtMjQuODU5Mzc1LTE4LjIzNDM3NS00NS41MzEyNS00Mi4wMzEyNS00OS4zNTkzNzV6bS0zNS43NzczNDQtNjAuNjQwNjI1IDE1IDYwaC04My4wNTA3ODFsMjIuOTI5Njg3LTIyLjkyOTY4OGMzLjkwNjI1LTMuOTA2MjUgMy45MDYyNS0xMC4yMzQzNzQgMC0xNC4xNDA2MjRzLTEwLjIzNDM3NC0zLjkwNjI1LTE0LjE0MDYyNCAwbC0yMi45Mjk2ODggMjIuOTI1Nzgxdi00NS44NTU0Njl6bTcuODA4NTk0LTMwYzAgNS41MTk1MzEtNC40ODA0NjkgMTAtMTAgMTBoLTgwdi0yMGg4MGM1LjUxNTYyNSAwIDEwIDQuNDg0Mzc1IDEwIDEwem0tMzE2IDI3MGMtMjIuMDU0Njg4IDAtNDAtMTcuOTQ1MzEyLTQwLTQwIDAtMjIuMzU1NDY5IDE4LjI2OTUzMS00MCA0MC00MCAyMS43ODEyNSAwIDQwIDE3LjY5MTQwNiA0MCA0MCAwIDIyLjA1NDY4OC0xNy45NDUzMTIgNDAtNDAgNDB6bTU2LjU2NjQwNi02MGMtOC4zNTE1NjItMjMuNTk3NjU2LTMwLjk1NzAzMS00MC01Ni41NjY0MDYtNDAtMjUuNjIxMDk0IDAtNDguMjM0Mzc1IDE2LjQxNDA2Mi01Ni41NzAzMTIgNDBoLTM5LjQyOTY4OGMtNS41MTU2MjUgMC0xMC00LjQ4NDM3NS0xMC0xMHYtMjYwYzAtNS41MTU2MjUgNC40ODQzNzUtMTAgMTAtMTBoMjkyYzUuNTE1NjI1IDAgMTAgNC40ODQzNzUgMTAgMTB2Mjcwem0yNDkuNDMzNTk0IDYwYy0yMi4wNTQ2ODggMC00MC0xNy45NDUzMTItNDAtNDAgMC0yMi4zNTU0NjkgMTguMjY5NTMxLTQwIDQwLTQwIDIxLjc4MTI1IDAgNDAgMTcuNjkxNDA2IDQwIDQwIDAgMjIuMDU0Njg4LTE3Ljk0NTMxMiA0MC00MCA0MHptNTUuODU1NDY5LTYxLjkxMDE1NmMtOC44NzEwOTQtMjIuNTcwMzEzLTMwLjk0MTQwNy0zOC4wODk4NDQtNTUuODU1NDY5LTM4LjA4OTg0NC0yNS42MjEwOTQgMC00OC4yMzQzNzUgMTYuNDE0MDYyLTU2LjU3MDMxMiA0MGgtMjMuNDI5Njg4di0xMDBoMTEwYzEzLjAzNTE1NiAwIDI0LjE1MjM0NCA4LjM1OTM3NSAyOC4yODEyNSAyMGgtMjguMjgxMjVjLTUuNTIzNDM4IDAtMTAgNC40NzY1NjItMTAgMTBzNC40NzY1NjIgMTAgMTAgMTBoMzB2NTBjMCAzLjMyNDIxOS0xLjY0MDYyNSA2LjI2OTUzMS00LjE0NDUzMSA4LjA4OTg0NHptMCAwIiBmaWxsPSIjRkZGRkZGIi8+PHBhdGggZD0ibTE3NiA2MGMtNDkuNjI1IDAtOTAgNDAuMzc1LTkwIDkwczQwLjM3NSA5MCA5MCA5MCA5MC00MC4zNzUgOTAtOTAtNDAuMzc1LTkwLTkwLTkwem0wIDE2MGMtMzguNTk3NjU2IDAtNzAtMzEuNDAyMzQ0LTcwLTcwczMxLjQwMjM0NC03MCA3MC03MCA3MCAzMS40MDIzNDQgNzAgNzAtMzEuNDAyMzQ0IDcwLTcwIDcwem0wIDAiIGZpbGw9IiNGRkZGRkYiLz48cGF0aCBkPSJtMjE2IDE0MGgtMzB2LTMwYzAtNS41MjM0MzgtNC40NzY1NjItMTAtMTAtMTBzLTEwIDQuNDc2NTYyLTEwIDEwdjQwYzAgNS41MjM0MzggNC40NzY1NjIgMTAgMTAgMTBoNDBjNS41MjM0MzggMCAxMC00LjQ3NjU2MiAxMC0xMHMtNC40NzY1NjItMTAtMTAtMTB6bTAgMCIgZmlsbD0iI0ZGRkZGRiIvPjwvc3ZnPgo=" alt="[Icone Logística]" title="Icone Logística">
+                                </figure>
+                            </div>
+                            <div class="box2-2">
+                                <figcaption>
+                                    <h2>Logística e Produção</h2>
+                                    <p>Qual é o melhor local para eu abrir um novo centro de distribuição? Quantas pessoas moram em um determinado raio na região de uma cidade?</p>
+                                    
+                                    <p>São perguntas envolvidas na área de logística e distribuição que precisam de respostas inteligentes baseadas não mais no achismo, e sim em dados.
+                                    A Geoinova possui respostas para estas perguntas. Através da análise de informações de bases como IBGE e dados do mercado conseguimos criar uma solução que atenda à sua necessidade.</p>
+                                    
+                                </figcaption>
+                            </div>
+
+                            <div class="box2-3">
+                                <a href="#boxContato">Solicitar Contato</a>
+                            </div>
+                        </section>
+                    </div>
+                </section>
+            </div>
+
+            <div data-anime-solucoes="direita" id="telaNegocio" class="ocultar">
+                <section class="conteudoBox">
+                    <div class="box1">
+                        <figure>
+                            <img class="imagem" src="img/negocio.jpg" alt="[Imagem Negócio]" title="Imagem Negócio">
+                        </figure>
+                    </div>
+
+                    <div class="box2">
+                        <section>
+                            <div class="box2-1">
+                                <figure>
+                                    <img class="icon" src="data:image/svg+xml;utf8;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0iaXNvLTg4NTktMSI/Pgo8IS0tIEdlbmVyYXRvcjogQWRvYmUgSWxsdXN0cmF0b3IgMTkuMC4wLCBTVkcgRXhwb3J0IFBsdWctSW4gLiBTVkcgVmVyc2lvbjogNi4wMCBCdWlsZCAwKSAgLS0+CjxzdmcgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIiB4bWxuczp4bGluaz0iaHR0cDovL3d3dy53My5vcmcvMTk5OS94bGluayIgdmVyc2lvbj0iMS4xIiBpZD0iQ2FwYV8xIiB4PSIwcHgiIHk9IjBweCIgdmlld0JveD0iMCAwIDUxMS45OTkgNTExLjk5OSIgc3R5bGU9ImVuYWJsZS1iYWNrZ3JvdW5kOm5ldyAwIDAgNTExLjk5OSA1MTEuOTk5OyIgeG1sOnNwYWNlPSJwcmVzZXJ2ZSIgd2lkdGg9IjMycHgiIGhlaWdodD0iMzJweCI+CjxnPgoJPGc+CgkJPHBhdGggZD0iTTM0NC4yMTQsMjc2Ljc1NWwtNDMuNTgyLTE5LjM3Yy0zLjA3OS0xLjM2OC01LjA2Ny00LjQyOS01LjA2Ny03Ljc5N1YyMzcuNjJjMTQuNjQtMTEuNjY1LDI0LjA1LTI5LjYyOCwyNC4wNS00OS43NTggICAgdi0xNi44NDdjNC44MjMtMi42NjUsOC4wMTYtNy44MTUsOC4wMTYtMTMuNTgzdi0xLjYzNWMwLTM1LjA3Ni0yOC41MzctNjMuNjEzLTYzLjYxMy02My42MTNoLTE2LjAzMiAgICBjLTM1LjA3NiwwLTYzLjYxMywyOC41MzctNjMuNjEzLDYzLjYxM3YxNC44MzVjMCw1LjA3LDIuMTgyLDkuNjYzLDUuOTg1LDEyLjYwMmMwLjY0NSwwLjQ5OCwxLjMyNCwwLjkzNiwyLjAzMSwxLjMxNXYzLjMxMiAgICBjMCwyMC4xMyw5LjQwOSwzOC4wOTMsMjQuMDQ4LDQ5Ljc1N3YxMS45NjljMCwzLjM2OC0xLjk4OSw2LjQyOS01LjA2Nyw3Ljc5N2wtNDMuNTgyLDE5LjM3ICAgIGMtMTQuMjczLDYuMzQzLTIzLjQ5NiwyMC41MzUtMjMuNDk2LDM2LjE1NHY5OS40MDRjMCw0LjE0MiwzLjM1OCw3LjUsNy41LDcuNWM0LjE0MiwwLDcuNS0zLjM1OCw3LjUtNy41di05OS40MDMgICAgYzAtMC44NjksMC4wNjItMS43MjgsMC4xNTItMi41OGwyMC4wODIsMjAuMDgyYzMuMTI1LDMuMTI2LDQuODQ3LDcuMjgxLDQuODQ3LDExLjcwMnY3MC4yYzAsNC4xNDIsMy4zNTgsNy41LDcuNSw3LjUgICAgYzQuMTQyLDAsNy41LTMuMzU4LDcuNS03LjV2LTcwLjJjMC04LjQyNy0zLjI4MS0xNi4zNDktOS4yNC0yMi4zMDhsLTIzLjk0MS0yMy45NDJjMi4xNTctMi4yMzgsNC43NDUtNC4wOTMsNy42ODktNS40MDIgICAgbDQyLjg0Ny0xOS4wNDNsMzEuNzc1LDMxLjc3NXYxMDkuMTE5YzAsNC4xNDIsMy4zNTgsNy41LDcuNSw3LjVzNy41LTMuMzU4LDcuNS03LjVWMzAzLjE5NGwzMS43NzUtMzEuNzc1bDQyLjg0NiwxOS4wNDIgICAgYzIuOTQ0LDEuMzA5LDUuNTMyLDMuMTY0LDcuNjg5LDUuNDAzbC0yMy45NDEsMjMuOTQxYy01Ljk1OSw1Ljk1OS05LjI0LDEzLjg4MS05LjI0LDIyLjMwOHY3MC4yYzAsNC4xNDIsMy4zNTgsNy41LDcuNSw3LjUgICAgYzQuMTQyLDAsNy41LTMuMzU4LDcuNS03LjV2LTcwLjJjMC00LjQyLDEuNzIxLTguNTc2LDQuODQ3LTExLjcwMmwyMC4wODEtMjAuMDgxYzAuMDksMC44NTIsMC4xNTIsMS43MDksMC4xNTIsMi41Nzh2OTkuNDA0ICAgIGMwLDQuMTQyLDMuMzU4LDcuNSw3LjUsNy41YzQuMTQyLDAsNy41LTMuMzU4LDcuNS03LjV2LTk5LjQwM0MzNjcuNzA5LDI5Ny4yOSwzNTguNDg3LDI4My4wOTgsMzQ0LjIxNCwyNzYuNzU1eiBNMjU2LDI4OS40ODEgICAgbC0yNy44ODEtMjcuODgyYzIuMTItMy41NjcsMy4zMTctNy42OTQsMy4zMTctMTIuMDExdi0zLjA1MmM3LjU2MywzLjE3OCwxNS44NjIsNC45MzksMjQuNTY1LDQuOTM5czE3LjAwMS0xLjc2LDI0LjU2My00LjkzOCAgICB2My4wNTFjMCw0LjMxOCwxLjE5Nyw4LjQ0NCwzLjMxOCwxMi4wMTJMMjU2LDI4OS40ODF6IE0yNTYuMDAxLDIzNi40NzRjLTI2LjgwNSwwLjAwMS00OC42MTMtMjEuODA3LTQ4LjYxMy00OC42MTJ2LTMuMzczICAgIGM0LjY4LTEuODU1LDkuMjQ4LTQuODA3LDEzLjYyMS04Ljg0MmMzLjA0My0yLjgwOSwzLjIzNC03LjU1NCwwLjQyNC0xMC41OThjLTIuODA5LTMuMDQzLTcuNTUzLTMuMjM0LTEwLjU5OC0wLjQyNSAgICBjLTMuNzUxLDMuNDYzLTcuNDk5LDUuNy0xMS4xMzcsNi42NWMtMC4wODgsMC4wMjMtMC4xNTMsMC4wMzMtMC4xOTksMC4wMzdjLTAuMDU0LTAuMTA1LTAuMTI3LTAuMzI1LTAuMTI3LTAuNjc4di0xNC44MzUgICAgYzAtMjYuODA1LDIxLjgwOC00OC42MTMsNDguNjEzLTQ4LjYxM2gxNi4wMzJjMjYuODA2LDAsNDguNjEzLDIxLjgwOCw0OC42MTMsNDguNjEzdjEuNjM1YzAsMC4yNDMtMC4xNDYsMC40NTQtMC4zMzgsMC40OTIgICAgYy00NC45MTEsOC44Ny02Ny40MzctNy44NDctNzUuMDM3LTE1LjQ0N2MtMi45MjktMi45MjktNy42NzgtMi45MjktMTAuNjA2LDBjLTIuOTI5LDIuOTI5LTIuOTI5LDcuNjc4LDAsMTAuNjA2ICAgIGMyMy4yOSwyMy4yOSw1Ny4yNzUsMjMuNzEsNzcuOTY1LDIxLjIyNHYxMy41NTNDMzA0LjYxNCwyMTQuNjY2LDI4Mi44MDYsMjM2LjQ3NCwyNTYuMDAxLDIzNi40NzR6IiBmaWxsPSIjRkZGRkZGIi8+Cgk8L2c+CjwvZz4KPGc+Cgk8Zz4KCQk8cGF0aCBkPSJNMTM1LjI0MiwyMzUuOTYxdi0xNi4wMzVjMC0xOS41NjYtMTAuMTY4LTM2Ljc5LTI1LjQ4OS00Ni43MDJjMC45NDYtMy4wMzUsMS40NC02LjIxNCwxLjQ0LTkuNDExICAgIGMwLTE3LjM5Ni0xNC4xNTItMzEuNTQ4LTMxLjU0OC0zMS41NDhzLTMxLjU0OCwxNC4xNTMtMzEuNTQ4LDMxLjU0OGMwLDMuMjM3LDAuNDksNi4zODUsMS40MzgsOS40MTMgICAgYy0xNS4zMiw5LjkxMS0yNS40ODcsMjcuMTM1LTI1LjQ4Nyw0Ni43djE2LjAzMmMwLDE4Ljk0Nyw5LjUzMywzNS43MDEsMjQuMDQ4LDQ1Ljc0M3YxNi40OTNjMCwzLjI1My0xLjgwNyw2LjE3Ny00LjcxNiw3LjYzMiAgICBsLTI1Ljk0MSwxMi45N0M2LjY4MiwzMjQuMTc2LDAsMzM0Ljk4OCwwLDM0Ny4wMTV2NjUuMjk5YzAsNC4xNDIsMy4zNTgsNy41LDcuNSw3LjVzNy41LTMuMzU4LDcuNS03LjV2LTYyLjA1NWwxMi4yMTgsMTIuMjE4ICAgIGMzLjEyNSwzLjEyNiw0Ljg0Nyw3LjI4MSw0Ljg0NywxMS43MDJ2MzguMTM1YzAsNC4xNDIsMy4zNTgsNy41LDcuNSw3LjVjNC4xNDIsMCw3LjUtMy4zNTgsNy41LTcuNXYtMzguMTM1ICAgIGMwLTguNDI3LTMuMjgyLTE2LjM0OS05LjI0LTIyLjMwOEwyMC44MiwzMzQuODY2Yy0wLjA4Mi0wLjA4Mi0wLjE3LTAuMTUzLTAuMjU0LTAuMjNjMS4wNjctMC45NDIsMi4yNjQtMS43NjIsMy41ODItMi40MjIgICAgbDI1Ljk0MS0xMi45N2MxLjMyOS0wLjY2NSwyLjU2Ni0xLjQ1LDMuNzE5LTIuMzIybDE4LjMzNywxOC4zMzh2NzcuMDU1YzAsNC4xNDIsMy4zNTgsNy41LDcuNSw3LjVjNC4xNDIsMCw3LjUtMy4zNTgsNy41LTcuNSAgICB2LTc3LjA1NmwxOC4zMzgtMTguMzM4YzEuMTU0LDAuODczLDIuMzksMS42NTgsMy43MTksMi4zMjJsNy4xNTMsMy41NzdjMS4wNzcsMC41MzksMi4yMjEsMC43OTQsMy4zNDksMC43OTQgICAgYzIuNzUxLDAsNS40LTEuNTIsNi43MTQtNC4xNDdjMS44NTMtMy43MDUsMC4zNTEtOC4yMS0zLjM1NC0xMC4wNjJsLTcuMTUzLTMuNTc3Yy0yLjkxLTEuNDU1LTQuNzE3LTQuMzc5LTQuNzE3LTcuNjMxdi0xNi40OTMgICAgQzEyNS43MDksMjcxLjY2MiwxMzUuMjQyLDI1NC45MDcsMTM1LjI0MiwyMzUuOTYxeiBNNzkuNjQ1LDE0Ny4yNjVjOS4xMjUsMCwxNi41NDgsNy40MjQsMTYuNTQ4LDE2LjU0OCAgICBjMCwxLjAwNS0wLjA5LDEuOTktMC4yNjIsMi45NTVjLTUuMTU0LTEuNTgyLTEwLjYyMS0yLjQzOS0xNi4yODYtMi40MzljLTUuNjU3LDAtMTEuMTE3LDAuODU0LTE2LjI2MywyLjQzMiAgICBjLTAuMTczLTAuOTY1LTAuMjg1LTEuOTQ1LTAuMjg1LTIuOTQ4QzYzLjA5NywxNTQuNjg4LDcwLjUyLDE0Ny4yNjUsNzkuNjQ1LDE0Ny4yNjV6IE03OS42NDUsMTc5LjMzICAgIGMyMi4zODUsMCw0MC41OTcsMTguMjEyLDQwLjU5Nyw0MC41OTd2Mi43MThjLTMxLjIyNSw5LjU2LTQ5LjgzNC0xNC4xOTMtNTAuNjI5LTE1LjIzNGMtMS4zMDUtMS43MzktMy4zLTIuODI3LTUuNDY4LTIuOTgxICAgIGMtMi4xNjgtMC4xNTItNC4yOTgsMC42NDEtNS44MzUsMi4xNzhjLTcuMTU5LDcuMTU5LTE0LjE3MSwxMC42MTItMTkuMjM1LDEyLjI3OUMzOS42MywxOTYuOTgxLDU3LjYwOSwxNzkuMzMsNzkuNjQ1LDE3OS4zM3ogICAgIE03OS42NDUsMzIxLjU0NWwtMTcuMzMxLTE3LjMzMWMwLjUwNi0xLjkzNCwwLjc4My0zLjk1LDAuNzgzLTYuMDE5di05LjE1NWM1LjIyOSwxLjYzNCwxMC43ODgsMi41MTUsMTYuNTQ4LDIuNTE1ICAgIHMxMS4zMTktMC44ODEsMTYuNTQ4LTIuNTE1djkuMTU1YzAsMi4wNjksMC4yNzcsNC4wODYsMC43ODMsNi4wMTlMNzkuNjQ1LDMyMS41NDV6IE03OS42NDUsMjc2LjU1NSAgICBjLTIyLjM4NSwwLTQwLjU5Ny0xOC4yMTItNDAuNTk3LTQwLjU5N3YtMS41NTRjNS45ODEtMS4zNzQsMTQuODQ5LTQuNTY3LDI0LjEtMTIuMDA3YzMuMjczLDMuMDg4LDcuOTUxLDYuODc2LDEzLjkwOCwxMC4xMjUgICAgYzcuMDQ2LDMuODQzLDE2Ljc3Nyw3LjM5OCwyOC42NjMsNy4zOThjNC41MTcsMCw5LjM1LTAuNTI1LDE0LjQ1OS0xLjczMUMxMTkuMDE1LDI1OS41NDEsMTAxLjI4MSwyNzYuNTU1LDc5LjY0NSwyNzYuNTU1eiIgZmlsbD0iI0ZGRkZGRiIvPgoJPC9nPgo8L2c+CjxnPgoJPGc+CgkJPHBhdGggZD0iTTQ5NC41NjEsMzAyLjc2NWwtNDEuOTczLTIwLjk4N2MtMi45MDktMS40NTUtNC43MTYtNC4zNzktNC43MTYtNy42MzF2LTEwLjYyOWM5LjgyNS04LjcyMywxNi4wMzItMjEuNDM1LDE2LjAzMi0zNS41NzUgICAgdi04LjUzN2MwLjE3MywwLDAuMzQzLDAuMDA1LDAuNTE2LDAuMDA1YzQuMTQyLDAsNy41LTMuMzU4LDcuNS03LjV2LTE2LjAzMmMwLTI2LjIzNi0yMS4zNDUtNDcuNTgxLTQ3LjU4MS00Ny41ODFoLTE2LjAzMiAgICBjLTI2LjIzNiwwLTQ3LjU4MSwyMS4zNDUtNDcuNTgxLDQ3LjU4MXYxNi4wMzJjMCw0LjE0MiwzLjM1OCw3LjUsNy41LDcuNWMwLjA2MiwwLDAuMjQyLTAuMDAyLDAuNTE2LTAuMDEzdjguNTQ1ICAgIGMwLDE0LjE0MSw2LjIwOCwyNi44NTMsMTYuMDMzLDM1LjU3NnYxMC42MjljMCwzLjI1My0xLjgwNyw2LjE3Ny00LjcxNyw3LjYzMWMtMy43MDUsMS44NTItNS4yMDcsNi4zNTctMy4zNTQsMTAuMDYyICAgIGMxLjMxNCwyLjYyOCwzLjk2Myw0LjE0OCw2LjcxNCw0LjE0OGMxLjEyNywwLDIuMjcxLTAuMjU1LDMuMzQ4LTAuNzkzYzEuMzI5LTAuNjY1LDIuNTY2LTEuNDUsMy43MTktMi4zMjJsMTguMzM4LDE4LjMzOHYxMDEuMTAzICAgIGMwLDQuMTQyLDMuMzU4LDcuNSw3LjUsNy41YzQuMTQyLDAsNy41LTMuMzU4LDcuNS03LjVWMzExLjIxbDE4LjMzNy0xOC4zMzhjMS4xNTQsMC44NzMsMi4zOSwxLjY1OCwzLjcxOSwyLjMyMmw0MC42MTUsMjAuMzA4ICAgIGwtMTIuMzE5LDEyLjMxOWMtNS45NTgsNS45NTktOS4yNCwxMy44ODEtOS4yNCwyMi4zMDh2NjIuMTg0YzAsNC4xNDIsMy4zNTgsNy41LDcuNSw3LjVjNC4xNDIsMCw3LjUtMy4zNTgsNy41LTcuNXYtNjIuMTg0ICAgIGMwLTQuNDIsMS43MjEtOC41NzYsNC44NDctMTEuNzAybDExLjY2OS0xMS42NjljMC4zNTQsMS4zNTcsMC41NDgsMi43NzIsMC41NDgsNC4yMjR2ODEuMzMxYzAsNC4xNDIsMy4zNTgsNy41LDcuNSw3LjUgICAgYzQuMTQyLDAsNy41LTMuMzU4LDcuNS03LjV2LTgxLjMzMUM1MTIsMzE4Ljk1Niw1MDUuMzE4LDMwOC4xNDQsNDk0LjU2MSwzMDIuNzY1eiBNMzc1LjcyNSwyMDIuODY4di02Ljk5aDAuMDAxICAgIGMwLTE3Ljk2NSwxNC42MTYtMzIuNTgxLDMyLjU4MS0zMi41ODFoMTYuMDMyYzE3Ljk2NSwwLDMyLjU4MSwxNC42MTYsMzIuNTgxLDMyLjU4MXY4LjMzMSAgICBjLTMyLjYwMy0xLjc1OS01Mi4yNzgtMTQuNDQ2LTUyLjQ2OS0xNC41NzFjLTEuMjY5LTAuODQ2LTIuNzE3LTEuMjYtNC4xNTgtMS4yNmMtMS45MzYsMC0zLjg1NiwwLjc0OC01LjMwNiwyLjE5NyAgICBDMzg3LjgxMSwxOTcuNzUxLDM4MC43OCwyMDEuMjA1LDM3NS43MjUsMjAyLjg2OHogTTQxNi4zMjMsMjk3LjQ5N2wtMTcuMzMxLTE3LjMzMWMwLjUwNi0xLjkzNCwwLjc4My0zLjk1LDAuNzgzLTYuMDE5di0xLjU5NyAgICBjNS4xNTYsMS45MTksMTAuNzMxLDIuOTczLDE2LjU0OCwyLjk3M2M1LjgxNywwLDExLjM5Mi0xLjA1NCwxNi41NDgtMi45NzN2MS41OTdjMCwyLjA2OSwwLjI3Niw0LjA4NSwwLjc4Myw2LjAxOSAgICBMNDE2LjMyMywyOTcuNDk3eiBNNDE2LjMyMywyNjAuNTI0Yy0xNy45NjUsMC0zMi41ODEtMTQuNjE1LTMyLjU4MS0zMi41ODF2LTEyLjA5MWgwYzUuMjUzLTIuMDk5LDExLjM3My01LjQzNiwxNy42MDEtMTAuNzQyICAgIGM3Ljg3Niw0LjA5OCwyNC4zNTQsMTEuMTgxLDQ3LjU2MSwxMy41MjF2OS4zMTJDNDQ4LjkwNCwyNDUuOTA4LDQzNC4yODgsMjYwLjUyNCw0MTYuMzIzLDI2MC41MjR6IiBmaWxsPSIjRkZGRkZGIi8+Cgk8L2c+CjwvZz4KPGc+CjwvZz4KPGc+CjwvZz4KPGc+CjwvZz4KPGc+CjwvZz4KPGc+CjwvZz4KPGc+CjwvZz4KPGc+CjwvZz4KPGc+CjwvZz4KPGc+CjwvZz4KPGc+CjwvZz4KPGc+CjwvZz4KPGc+CjwvZz4KPGc+CjwvZz4KPGc+CjwvZz4KPGc+CjwvZz4KPC9zdmc+Cg==" alt="[Icone Negócio]" title="Icone Negócio">
+                                </figure>
+                            </div>
+                            <div class="box2-2">
+                                <figcaption>
+                                    <h2>Negócio em Geral</h2>
+                                    <p>Basear-se em informações para a tomada de decisão é essencial no mercado competitivo de hoje.</p>
+                                    
+                                    <p>A Geoinova combina diferentes conjuntos de dados, sem limitações de volume ou natureza, para construir modelos de Big Data e Inteligência Artificial capazes de apoiar organizações na solução de seus mais diversos desafios e no desenvolvimento de uma visão estratégica de negócio.</p>
+                                    
+                                </figcaption>
+                            </div>
+
+                            <div class="box2-3">
+                                <a href="#boxContato">Solicitar Contato</a>
+                            </div>
+                        </section>
+                    </div>
+                </section>
+            </div>
+
+            <div data-anime-solucoes="direita" id="telaGestao" class="ocultar">
+                <section class="conteudoBox">
+                    <div class="box1">
+                        <figure>
+                            <img class="imagem" src="img/gestao-publica.jpg" alt="[Imagem Gestão Pública]" title="Imagem Gestão Pública">
+                        </figure>
+                    </div>
+
+                    <div class="box2">
+                        <section>
+                            <div class="box2-1">
+                                <figure>
+                                    <img class="icon" src="data:image/svg+xml;utf8;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0iaXNvLTg4NTktMSI/Pgo8IS0tIEdlbmVyYXRvcjogQWRvYmUgSWxsdXN0cmF0b3IgMTkuMC4wLCBTVkcgRXhwb3J0IFBsdWctSW4gLiBTVkcgVmVyc2lvbjogNi4wMCBCdWlsZCAwKSAgLS0+CjxzdmcgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIiB4bWxuczp4bGluaz0iaHR0cDovL3d3dy53My5vcmcvMTk5OS94bGluayIgdmVyc2lvbj0iMS4xIiBpZD0iQ2FwYV8xIiB4PSIwcHgiIHk9IjBweCIgdmlld0JveD0iMCAwIDQ4MCA0ODAiIHN0eWxlPSJlbmFibGUtYmFja2dyb3VuZDpuZXcgMCAwIDQ4MCA0ODA7IiB4bWw6c3BhY2U9InByZXNlcnZlIiB3aWR0aD0iMzJweCIgaGVpZ2h0PSIzMnB4Ij4KPGc+Cgk8Zz4KCQk8cGF0aCBkPSJNNDcyLDc2aC04OFYxMmMwLTQuNDE4LTMuNTgyLTgtOC04SDEwNGMtNC40MTgsMC04LDMuNTgyLTgsOHYxMTJIOGMtNC40MTgsMC04LDMuNTgyLTgsOHYzMjhjMCw0LjQxOCwzLjU4Miw4LDgsOCAgICBzOC0zLjU4Miw4LThWMTQwaDgwdjMyOGMwLDQuNDE4LDMuNTgyLDgsOCw4aDI3MmM0LjQxOCwwLDgtMy41ODIsOC04VjkyaDgwdjM2OGMwLDQuNDE4LDMuNTgyLDgsOCw4czgtMy41ODIsOC04Vjg0ICAgIEM0ODAsNzkuNTgyLDQ3Ni40MTgsNzYsNDcyLDc2eiBNMjMyLDQ2MGgtMzJ2LTcyaDMyVjQ2MHogTTI4MCw0NjBoLTMydi03MmgzMlY0NjB6IE0zNjgsNDYwaC03MnYtODBjMC00LjQxOC0zLjU4Mi04LTgtOGgtOTYgICAgYy00LjQxOCwwLTgsMy41ODItOCw4djgwaC03MlYyMGgyNTZWNDYweiIgZmlsbD0iI0ZGRkZGRiIvPgoJPC9nPgo8L2c+CjxnPgoJPGc+CgkJPHBhdGggZD0iTTE4NCwzNmgtNDhjLTQuNDE4LDAtOCwzLjU4Mi04LDh2NDhjMCw0LjQxOCwzLjU4Miw4LDgsOGg0OGM0LjQxOCwwLDgtMy41ODIsOC04VjQ0QzE5MiwzOS41ODIsMTg4LjQxOCwzNiwxODQsMzZ6ICAgICBNMTc2LDg0aC0zMlY1MmgzMlY4NHoiIGZpbGw9IiNGRkZGRkYiLz4KCTwvZz4KPC9nPgo8Zz4KCTxnPgoJCTxwYXRoIGQ9Ik0yNjQsMzZoLTQ4Yy00LjQxOCwwLTgsMy41ODItOCw4djQ4YzAsNC40MTgsMy41ODIsOCw4LDhoNDhjNC40MTgsMCw4LTMuNTgyLDgtOFY0NEMyNzIsMzkuNTgyLDI2OC40MTgsMzYsMjY0LDM2eiAgICAgTTI1Niw4NGgtMzJWNTJoMzJWODR6IiBmaWxsPSIjRkZGRkZGIi8+Cgk8L2c+CjwvZz4KPGc+Cgk8Zz4KCQk8cGF0aCBkPSJNMzQ0LDM2aC00OGMtNC40MTgsMC04LDMuNTgyLTgsOHY0OGMwLDQuNDE4LDMuNTgyLDgsOCw4aDQ4YzQuNDE4LDAsOC0zLjU4Miw4LThWNDRDMzUyLDM5LjU4MiwzNDguNDE4LDM2LDM0NCwzNnogICAgIE0zMzYsODRoLTMyVjUyaDMyVjg0eiIgZmlsbD0iI0ZGRkZGRiIvPgoJPC9nPgo8L2c+CjxnPgoJPGc+CgkJPHBhdGggZD0iTTE4NCwxMTZoLTQ4Yy00LjQxOCwwLTgsMy41ODItOCw4djQ4YzAsNC40MTgsMy41ODIsOCw4LDhoNDhjNC40MTgsMCw4LTMuNTgyLDgtOHYtNDhDMTkyLDExOS41ODIsMTg4LjQxOCwxMTYsMTg0LDExNnogICAgIE0xNzYsMTY0aC0zMnYtMzJoMzJWMTY0eiIgZmlsbD0iI0ZGRkZGRiIvPgoJPC9nPgo8L2c+CjxnPgoJPGc+CgkJPHBhdGggZD0iTTI2NCwxMTZoLTQ4Yy00LjQxOCwwLTgsMy41ODItOCw4djQ4YzAsNC40MTgsMy41ODIsOCw4LDhoNDhjNC40MTgsMCw4LTMuNTgyLDgtOHYtNDhDMjcyLDExOS41ODIsMjY4LjQxOCwxMTYsMjY0LDExNnogICAgIE0yNTYsMTY0aC0zMnYtMzJoMzJWMTY0eiIgZmlsbD0iI0ZGRkZGRiIvPgoJPC9nPgo8L2c+CjxnPgoJPGc+CgkJPHBhdGggZD0iTTM0NCwxMTZoLTQ4Yy00LjQxOCwwLTgsMy41ODItOCw4djQ4YzAsNC40MTgsMy41ODIsOCw4LDhoNDhjNC40MTgsMCw4LTMuNTgyLDgtOHYtNDhDMzUyLDExOS41ODIsMzQ4LjQxOCwxMTYsMzQ0LDExNnogICAgIE0zMzYsMTY0aC0zMnYtMzJoMzJWMTY0eiIgZmlsbD0iI0ZGRkZGRiIvPgoJPC9nPgo8L2c+CjxnPgoJPGc+CgkJPHBhdGggZD0iTTE4NCwxOTZoLTQ4Yy00LjQxOCwwLTgsMy41ODItOCw4djQ4YzAsNC40MTgsMy41ODIsOCw4LDhoNDhjNC40MTgsMCw4LTMuNTgyLDgtOHYtNDhDMTkyLDE5OS41ODIsMTg4LjQxOCwxOTYsMTg0LDE5NnogICAgIE0xNzYsMjQ0aC0zMnYtMzJoMzJWMjQ0eiIgZmlsbD0iI0ZGRkZGRiIvPgoJPC9nPgo8L2c+CjxnPgoJPGc+CgkJPHBhdGggZD0iTTI2NCwxOTZoLTQ4Yy00LjQxOCwwLTgsMy41ODItOCw4djQ4YzAsNC40MTgsMy41ODIsOCw4LDhoNDhjNC40MTgsMCw4LTMuNTgyLDgtOHYtNDhDMjcyLDE5OS41ODIsMjY4LjQxOCwxOTYsMjY0LDE5NnogICAgIE0yNTYsMjQ0aC0zMnYtMzJoMzJWMjQ0eiIgZmlsbD0iI0ZGRkZGRiIvPgoJPC9nPgo8L2c+CjxnPgoJPGc+CgkJPHBhdGggZD0iTTM0NCwxOTZoLTQ4Yy00LjQxOCwwLTgsMy41ODItOCw4djQ4YzAsNC40MTgsMy41ODIsOCw4LDhoNDhjNC40MTgsMCw4LTMuNTgyLDgtOHYtNDhDMzUyLDE5OS41ODIsMzQ4LjQxOCwxOTYsMzQ0LDE5NnogICAgIE0zMzYsMjQ0aC0zMnYtMzJoMzJWMjQ0eiIgZmlsbD0iI0ZGRkZGRiIvPgoJPC9nPgo8L2c+CjxnPgoJPGc+CgkJPHBhdGggZD0iTTE4NCwyNzZoLTQ4Yy00LjQxOCwwLTgsMy41ODItOCw4djQ4YzAsNC40MTgsMy41ODIsOCw4LDhoNDhjNC40MTgsMCw4LTMuNTgyLDgtOHYtNDhDMTkyLDI3OS41ODIsMTg4LjQxOCwyNzYsMTg0LDI3NnogICAgIE0xNzYsMzI0aC0zMnYtMzJoMzJWMzI0eiIgZmlsbD0iI0ZGRkZGRiIvPgoJPC9nPgo8L2c+CjxnPgoJPGc+CgkJPHBhdGggZD0iTTI2NCwyNzZoLTQ4Yy00LjQxOCwwLTgsMy41ODItOCw4djQ4YzAsNC40MTgsMy41ODIsOCw4LDhoNDhjNC40MTgsMCw4LTMuNTgyLDgtOHYtNDhDMjcyLDI3OS41ODIsMjY4LjQxOCwyNzYsMjY0LDI3NnogICAgIE0yNTYsMzI0aC0zMnYtMzJoMzJWMzI0eiIgZmlsbD0iI0ZGRkZGRiIvPgoJPC9nPgo8L2c+CjxnPgoJPGc+CgkJPHBhdGggZD0iTTM0NCwyNzZoLTQ4Yy00LjQxOCwwLTgsMy41ODItOCw4djQ4YzAsNC40MTgsMy41ODIsOCw4LDhoNDhjNC40MTgsMCw4LTMuNTgyLDgtOHYtNDhDMzUyLDI3OS41ODIsMzQ4LjQxOCwyNzYsMzQ0LDI3NnogICAgIE0zMzYsMzI0aC0zMnYtMzJoMzJWMzI0eiIgZmlsbD0iI0ZGRkZGRiIvPgoJPC9nPgo8L2c+CjxnPgoJPGc+CgkJPHBhdGggZD0iTTQ4LDE1NmgtOGMtNC40MTgsMC04LDMuNTgyLTgsOHY4YzAsNC40MTgsMy41ODIsOCw4LDhoOGM0LjQxOCwwLDgtMy41ODIsOC04di04QzU2LDE1OS41ODIsNTIuNDE4LDE1Niw0OCwxNTZ6IiBmaWxsPSIjRkZGRkZGIi8+Cgk8L2c+CjwvZz4KPGc+Cgk8Zz4KCQk8cGF0aCBkPSJNODAsMTU2aC04Yy00LjQxOCwwLTgsMy41ODItOCw4djhjMCw0LjQxOCwzLjU4Miw4LDgsOGg4YzQuNDE4LDAsOC0zLjU4Miw4LTh2LThDODgsMTU5LjU4Miw4NC40MTgsMTU2LDgwLDE1NnoiIGZpbGw9IiNGRkZGRkYiLz4KCTwvZz4KPC9nPgo8Zz4KCTxnPgoJCTxwYXRoIGQ9Ik00OCwxODhoLThjLTQuNDE4LDAtOCwzLjU4Mi04LDh2OGMwLDQuNDE4LDMuNTgyLDgsOCw4aDhjNC40MTgsMCw4LTMuNTgyLDgtOHYtOEM1NiwxOTEuNTgyLDUyLjQxOCwxODgsNDgsMTg4eiIgZmlsbD0iI0ZGRkZGRiIvPgoJPC9nPgo8L2c+CjxnPgoJPGc+CgkJPHBhdGggZD0iTTgwLDE4OGgtOGMtNC40MTgsMC04LDMuNTgyLTgsOHY4YzAsNC40MTgsMy41ODIsOCw4LDhoOGM0LjQxOCwwLDgtMy41ODIsOC04di04Qzg4LDE5MS41ODIsODQuNDE4LDE4OCw4MCwxODh6IiBmaWxsPSIjRkZGRkZGIi8+Cgk8L2c+CjwvZz4KPGc+Cgk8Zz4KCQk8cGF0aCBkPSJNNDgsMjIwaC04Yy00LjQxOCwwLTgsMy41ODItOCw4djhjMCw0LjQxOCwzLjU4Miw4LDgsOGg4YzQuNDE4LDAsOC0zLjU4Miw4LTh2LThDNTYsMjIzLjU4Miw1Mi40MTgsMjIwLDQ4LDIyMHoiIGZpbGw9IiNGRkZGRkYiLz4KCTwvZz4KPC9nPgo8Zz4KCTxnPgoJCTxwYXRoIGQ9Ik04MCwyMjBoLThjLTQuNDE4LDAtOCwzLjU4Mi04LDh2OGMwLDQuNDE4LDMuNTgyLDgsOCw4aDhjNC40MTgsMCw4LTMuNTgyLDgtOHYtOEM4OCwyMjMuNTgyLDg0LjQxOCwyMjAsODAsMjIweiIgZmlsbD0iI0ZGRkZGRiIvPgoJPC9nPgo8L2c+CjxnPgoJPGc+CgkJPHBhdGggZD0iTTQ4LDI1MmgtOGMtNC40MTgsMC04LDMuNTgyLTgsOHY4YzAsNC40MTgsMy41ODIsOCw4LDhoOGM0LjQxOCwwLDgtMy41ODIsOC04di04QzU2LDI1NS41ODIsNTIuNDE4LDI1Miw0OCwyNTJ6IiBmaWxsPSIjRkZGRkZGIi8+Cgk8L2c+CjwvZz4KPGc+Cgk8Zz4KCQk8cGF0aCBkPSJNODAsMjUyaC04Yy00LjQxOCwwLTgsMy41ODItOCw4djhjMCw0LjQxOCwzLjU4Miw4LDgsOGg4YzQuNDE4LDAsOC0zLjU4Miw4LTh2LThDODgsMjU1LjU4Miw4NC40MTgsMjUyLDgwLDI1MnoiIGZpbGw9IiNGRkZGRkYiLz4KCTwvZz4KPC9nPgo8Zz4KCTxnPgoJCTxwYXRoIGQ9Ik00OCwyODRoLThjLTQuNDE4LDAtOCwzLjU4Mi04LDh2OGMwLDQuNDE4LDMuNTgyLDgsOCw4aDhjNC40MTgsMCw4LTMuNTgyLDgtOHYtOEM1NiwyODcuNTgyLDUyLjQxOCwyODQsNDgsMjg0eiIgZmlsbD0iI0ZGRkZGRiIvPgoJPC9nPgo8L2c+CjxnPgoJPGc+CgkJPHBhdGggZD0iTTgwLDI4NGgtOGMtNC40MTgsMC04LDMuNTgyLTgsOHY4YzAsNC40MTgsMy41ODIsOCw4LDhoOGM0LjQxOCwwLDgtMy41ODIsOC04di04Qzg4LDI4Ny41ODIsODQuNDE4LDI4NCw4MCwyODR6IiBmaWxsPSIjRkZGRkZGIi8+Cgk8L2c+CjwvZz4KPGc+Cgk8Zz4KCQk8cGF0aCBkPSJNNDgsMzE2aC04Yy00LjQxOCwwLTgsMy41ODItOCw4djhjMCw0LjQxOCwzLjU4Miw4LDgsOGg4YzQuNDE4LDAsOC0zLjU4Miw4LTh2LThDNTYsMzE5LjU4Miw1Mi40MTgsMzE2LDQ4LDMxNnoiIGZpbGw9IiNGRkZGRkYiLz4KCTwvZz4KPC9nPgo8Zz4KCTxnPgoJCTxwYXRoIGQ9Ik04MCwzMTZoLThjLTQuNDE4LDAtOCwzLjU4Mi04LDh2OGMwLDQuNDE4LDMuNTgyLDgsOCw4aDhjNC40MTgsMCw4LTMuNTgyLDgtOHYtOEM4OCwzMTkuNTgyLDg0LjQxOCwzMTYsODAsMzE2eiIgZmlsbD0iI0ZGRkZGRiIvPgoJPC9nPgo8L2c+CjxnPgoJPGc+CgkJPHBhdGggZD0iTTQ4LDM0OGgtOGMtNC40MTgsMC04LDMuNTgyLTgsOHY4YzAsNC40MTgsMy41ODIsOCw4LDhoOGM0LjQxOCwwLDgtMy41ODIsOC04di04QzU2LDM1MS41ODIsNTIuNDE4LDM0OCw0OCwzNDh6IiBmaWxsPSIjRkZGRkZGIi8+Cgk8L2c+CjwvZz4KPGc+Cgk8Zz4KCQk8cGF0aCBkPSJNODAsMzQ4aC04Yy00LjQxOCwwLTgsMy41ODItOCw4djhjMCw0LjQxOCwzLjU4Miw4LDgsOGg4YzQuNDE4LDAsOC0zLjU4Miw4LTh2LThDODgsMzUxLjU4Miw4NC40MTgsMzQ4LDgwLDM0OHoiIGZpbGw9IiNGRkZGRkYiLz4KCTwvZz4KPC9nPgo8Zz4KCTxnPgoJCTxwYXRoIGQ9Ik00OCwzODBoLThjLTQuNDE4LDAtOCwzLjU4Mi04LDh2OGMwLDQuNDE4LDMuNTgyLDgsOCw4aDhjNC40MTgsMCw4LTMuNTgyLDgtOHYtOEM1NiwzODMuNTgyLDUyLjQxOCwzODAsNDgsMzgweiIgZmlsbD0iI0ZGRkZGRiIvPgoJPC9nPgo8L2c+CjxnPgoJPGc+CgkJPHBhdGggZD0iTTgwLDM4MGgtOGMtNC40MTgsMC04LDMuNTgyLTgsOHY4YzAsNC40MTgsMy41ODIsOCw4LDhoOGM0LjQxOCwwLDgtMy41ODIsOC04di04Qzg4LDM4My41ODIsODQuNDE4LDM4MCw4MCwzODB6IiBmaWxsPSIjRkZGRkZGIi8+Cgk8L2c+CjwvZz4KPGc+Cgk8Zz4KCQk8cGF0aCBkPSJNNDgsNDEyaC04Yy00LjQxOCwwLTgsMy41ODItOCw4djhjMCw0LjQxOCwzLjU4Miw4LDgsOGg4YzQuNDE4LDAsOC0zLjU4Miw4LTh2LThDNTYsNDE1LjU4Miw1Mi40MTgsNDEyLDQ4LDQxMnoiIGZpbGw9IiNGRkZGRkYiLz4KCTwvZz4KPC9nPgo8Zz4KCTxnPgoJCTxwYXRoIGQ9Ik04MCw0MTJoLThjLTQuNDE4LDAtOCwzLjU4Mi04LDh2OGMwLDQuNDE4LDMuNTgyLDgsOCw4aDhjNC40MTgsMCw4LTMuNTgyLDgtOHYtOEM4OCw0MTUuNTgyLDg0LjQxOCw0MTIsODAsNDEyeiIgZmlsbD0iI0ZGRkZGRiIvPgoJPC9nPgo8L2c+CjxnPgoJPGc+CgkJPHBhdGggZD0iTTQ0MCwxMDhoLTMyYy00LjQxOCwwLTgsMy41ODItOCw4djMyYzAsNC40MTgsMy41ODIsOCw4LDhoMzJjNC40MTgsMCw4LTMuNTgyLDgtOHYtMzJDNDQ4LDExMS41ODIsNDQ0LjQxOCwxMDgsNDQwLDEwOHogICAgIE00MzIsMTQwaC0xNnYtMTZoMTZWMTQweiIgZmlsbD0iI0ZGRkZGRiIvPgoJPC9nPgo8L2c+CjxnPgoJPGc+CgkJPHBhdGggZD0iTTQ0MCwxNzJoLTMyYy00LjQxOCwwLTgsMy41ODItOCw4djMyYzAsNC40MTgsMy41ODIsOCw4LDhoMzJjNC40MTgsMCw4LTMuNTgyLDgtOHYtMzJDNDQ4LDE3NS41ODIsNDQ0LjQxOCwxNzIsNDQwLDE3MnogICAgIE00MzIsMjA0aC0xNnYtMTZoMTZWMjA0eiIgZmlsbD0iI0ZGRkZGRiIvPgoJPC9nPgo8L2c+CjxnPgoJPGc+CgkJPHBhdGggZD0iTTQ0MCwyMzZoLTMyYy00LjQxOCwwLTgsMy41ODItOCw4djMyYzAsNC40MTgsMy41ODIsOCw4LDhoMzJjNC40MTgsMCw4LTMuNTgyLDgtOHYtMzJDNDQ4LDIzOS41ODIsNDQ0LjQxOCwyMzYsNDQwLDIzNnogICAgIE00MzIsMjY4aC0xNnYtMTZoMTZWMjY4eiIgZmlsbD0iI0ZGRkZGRiIvPgoJPC9nPgo8L2c+CjxnPgoJPGc+CgkJPHBhdGggZD0iTTQ0MCwzMDBoLTMyYy00LjQxOCwwLTgsMy41ODItOCw4djMyYzAsNC40MTgsMy41ODIsOCw4LDhoMzJjNC40MTgsMCw4LTMuNTgyLDgtOHYtMzJDNDQ4LDMwMy41ODIsNDQ0LjQxOCwzMDAsNDQwLDMwMHogICAgIE00MzIsMzMyaC0xNnYtMTZoMTZWMzMyeiIgZmlsbD0iI0ZGRkZGRiIvPgoJPC9nPgo8L2c+CjxnPgoJPGc+CgkJPHBhdGggZD0iTTQ0MCwzNjRoLTMyYy00LjQxOCwwLTgsMy41ODItOCw4djMyYzAsNC40MTgsMy41ODIsOCw4LDhoMzJjNC40MTgsMCw4LTMuNTgyLDgtOHYtMzJDNDQ4LDM2Ny41ODIsNDQ0LjQxOCwzNjQsNDQwLDM2NHogICAgIE00MzIsMzk2aC0xNnYtMTZoMTZWMzk2eiIgZmlsbD0iI0ZGRkZGRiIvPgoJPC9nPgo8L2c+CjxnPgo8L2c+CjxnPgo8L2c+CjxnPgo8L2c+CjxnPgo8L2c+CjxnPgo8L2c+CjxnPgo8L2c+CjxnPgo8L2c+CjxnPgo8L2c+CjxnPgo8L2c+CjxnPgo8L2c+CjxnPgo8L2c+CjxnPgo8L2c+CjxnPgo8L2c+CjxnPgo8L2c+CjxnPgo8L2c+Cjwvc3ZnPgo=" alt="[Icone Mineração]" title="Icone Mineração">
+                                </figure>
+                            </div>
+                            <div class="box2-2">
+                                <figcaption>
+                                    <h2>Gestão Pública</h2>
+                                    <p>Um bom gestor público tem o dever de buscar formas de economia e melhoria de atendimento à população de sua localidade. </p>
+                                    
+                                    <p>O que você precisa? Gerir informações? Acompanhar a execução de obras dos mais diversos tipos? Centralizar informações em um único local? Ou administrar um grande volume de informações? </p>
+                                    
+                                    <p>A Geoinova pode te ajudar! Com um case no governo de Goiás, podemos demonstrar como isso é possível.</p>
+                                    
+                                </figcaption>
+                            </div>
+
+                            <div class="box2-3">
+                                <a href="#boxContato">Solicitar Contato</a>
+                            </div>
+                        </section>
+                    </div>
+                </section>
+            </div>
         </section>
-    </header>
+    </div>
+
+    <!--Segundo Box-->
+    <div class="boxInovamaps" id="boxInovamaps">
+        <div class="containerBoxInovamaps">
+            <section class="box1">
+                <h2 class="tituloMenu">Inovamaps</h2>
+                
+                <h1 class="tituloDestaque">Monitoramento Digital de Áreas e Territórios</h1>
+                
+                <p class="texto">Inovamaps é uma plataforma digital de sensoriamento remoto que oferece não apenas imagens de
+                    satélite, mas também a possibilidade de monitorar pequenas ou grandes extensões de áreas e
+                    propriedades. O monitoramento é feito de forma preventiva, ou seja, é possível detectar problemas
+                    como desmatamento, invasão de propriedades, aproximação entre duas áreas, entre vários outros itens.</p>
+
+                <div class="btn">
+                    <a class="btnBox" href="#boxSegmentos">Quero Saber Mais</a>
+                </div>
+            </section>
+
+            <section class="box2">
+                
+                <div class="parte1">
+                    <div class="box2-1">
+                        <div class="box2-1-1">
+                            <span class="icon"><i class="fas fa-desktop"></i></span>
+                        </div>
+                        <div class="box2-1-2">
+                            <span class="valor">22</span>
+                            <span class="texto">milhões de km² monitorados</span>
+                        </div>
+                    </div>
+
+                    <div class="box2-1">
+                        <div class="box2-1-1">
+                            <span class="icon"><i class="far fa-bell"></i></span>
+                        </div>
+                        <div class="box2-1-2">
+                            <span class="valor">2000</span>
+                            <span class="texto">áreas monitoradas</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="parte2">
+                    <div class="box2-1">
+                        <div class="box2-1-1">
+                            <span class="icon"><i class="fas fa-satellite"></i></span>
+                        </div>
+                        <div class="box2-1-2">
+                            <span class="valor">4000</span>
+                            <span class="texto">Alertas detectados</span>
+                        </div>
+                    </div>
+
+                    <div class="box2-1">
+                        <div class="box2-1-1">
+                            <span class="icon"><i class="fas fa-images"></i></span>
+                        </div>
+                        <div class="box2-1-2">
+                            <span class="valor">200</span>
+                            <span class="texto">terabytes de imagens de satélite</span>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+        </div>
+    </div>
+
+    <!--Terceiro Box-->
+    <div class="boxSegmentos" id="boxSegmentos">
+
+        <section class="box1">
+            <div class="menuSegmentos">
+                
+                <ul class="menu1">
+                    <li data-menu="menuSegmentos" id="menuMineracao"><i class="fas fa-industry"></i><a href="#boxSegmentos">Mineração</a></li>
+                    <li data-menu="menuSegmentos" id="menuAmbiente"><i class="fas fa-tree"></i><a href="#boxSegmentos">Meio Ambiente</a></li>
+                    <li data-menu="menuSegmentos" id="menuEnergia"><i class="far fa-lightbulb"></i><a href="#boxSegmentos">Energia</a></li>
+                    <li data-menu="menuSegmentos" id="menuConstrucao"><i class="fas fa-vihara"></i><a href="#boxSegmentos">Construção</a></li>
+                </ul>
+
+                <ul class="menu2">
+                    <li data-menu="menuSegmentos" id="menuAgro"><i class="fas fa-tractor"></i><a href="#boxSegmentos">Agronegócio</a></li>
+                    <li data-menu="menuSegmentos" id="menuTransporte"><i class="fas fa-road"></i><a href="#boxSegmentos">Transportes</a></li>
+                    <li data-menu="menuSegmentos" id="menuGas"><i class="fas fa-gas-pump"></i><a href="#boxSegmentos">Óleo e Gás</a></li>
+                    <li data-menu="menuSegmentos" id="menuGoverno"><i class="fas fa-landmark"></i><a href="#boxSegmentos">Governo</a></li>
+                </ul>
+            </div>
+        </section>
+
+        <div data-anime-segmentos="fad-in" id="segmentoMineracao" class="ocultar">
+            <section class="box2">
+                <h2 class="titulo">Segmentos de Atuação</h2>
+
+                <h2 class="tituloDestaque">Mineração</h2>
+
+                <p class="texto">O módulo Inovamaps Mineração auxilia no planejamento e detecção de possíveis problemas
+                    com imagens de satélite de alta precisão. Conte com informações para garantir sucesso
+                    na exploração e conformidade com as políticas ambientais. </p>
+
+                <div class="checkList">
+                    <h3><i class="fas fa-check-circle"></i>Monitoramento de áreas</h3>
+                    <h3><i class="fas fa-check-circle"></i>Detecção de limites de propriedades e direitos minerais</h3>
+                    <h3><i class="fas fa-check-circle"></i>Alertas sobre invasões, desmatamentos e aproximação entre áreas</h3>
+                </div>
+
+                <div class="btn">
+                    <a class="btnBox" href="#boxContato">Solicitar Contato</a>
+                </div>
+            </section>
+        </div>
+
+        <div data-anime-segmentos="fad-in" id="segmentoAmbiente" class="ocultar">
+            <section class="box2">
+                <h2 class="titulo">Segmentos de Atuação</h2>
+
+                <h2 class="tituloDestaque">Meio Ambiente</h2>
+
+                <p class="texto">O módulo Inovamaps Meio Ambiente busca trazer informações e detalhes sobre florestas, áreas desmatadas, queimadas e reflorestamentos em geral. Tudo isso auxiliará você gestor ambiental a acompanhar a sua área de interesse.</p>
+
+                <div class="checkList">
+                    <h3><i class="fas fa-check-circle"></i>Monitoramento de áreas e grandes extensões de territórios</h3>
+                    <h3><i class="fas fa-check-circle"></i>Monitoramento do clima e de queimadas em geral</h3>
+                    <h3><i class="fas fa-check-circle"></i>Alertas sobre invasões, desmatamentos e aproximação entre áreas</h3>
+                </div>
+
+                <div class="btn">
+                    <a class="btnBox" href="#boxContato">Solicitar Contato</a>
+                </div>
+            </section>
+        </div>
+
+        <div data-anime-segmentos="fad-in" id="segmentoEnergia" class="ocultar">
+            <section class="box2">
+                <h2 class="titulo">Segmentos de Atuação</h2>
+
+                <h2 class="tituloDestaque">Energia</h2>
+
+                <p class="texto">Tenha uma visão completa de toda malha de linha de transmissão de energia de sua empresa. Através do módulo Inovamaps Energia é possível monitorar toda a extensão da malha e detectar invasões, desmatamento, queimadas ou vegetação próxima às linhas de transmissão. </p>
+
+                <div class="checkList">
+                    <h3><i class="fas fa-check-circle"></i>Monitoramento de áreas e grandes extensões de territórios</h3>
+                    <h3><i class="fas fa-check-circle"></i>Monitoramento de queimadas em geral</h3>
+                    <h3><i class="fas fa-check-circle"></i>Alertas sobre invasões, desmatamentos e aproximação entre áreas</h3>
+                </div>
+
+                <div class="btn">
+                    <a class="btnBox" href="#boxContato">Solicitar Contato</a>
+                </div>
+            </section>
+        </div>
+
+        <div data-anime-segmentos="fad-in" id="segmentoConstrucao" class="ocultar">
+            <section class="box2">
+                <h2 class="titulo">Segmentos de Atuação</h2>
+
+                <h2 class="tituloDestaque">Construção</h2>
+
+                <p class="texto">O módulo Inovamaps Construção permite você gestor ou engenheiro de obra acompanhar via imagens de satélite a evolução de uma obra. Tenha informações também sobre estoques a céu aberto. </p>
+
+                <div class="checkList">
+                    <h3><i class="fas fa-check-circle"></i>Monitoramento de propriedades</h3>
+                    <h3><i class="fas fa-check-circle"></i>Medição de estoque a céu aberto e área construída</h3>
+                    <h3><i class="fas fa-check-circle"></i>Alertas sobre invasões e desmatamentos na propriedade</h3>
+                </div>
+
+                <div class="btn">
+                    <a class="btnBox" href="#boxContato">Solicitar Contato</a>
+                </div>
+            </section>
+        </div>
+
+        <div data-anime-segmentos="fad-in" id="segmentoAgro" class="ocultar">
+            <section class="box2">
+                <h2 class="titulo">Segmentos de Atuação</h2>
+
+                <h2 class="tituloDestaque">Agronegócio</h2>
+
+                <p class="texto">Tenha controle total sobre áreas agrícolas. Saiba sobre eventos meteorológicos, acompanhe a situação de áreas atingidas por barragens, invasão, desmatamentos e outras informações através do módulo Inovamaps Agronegócio.</p>
+
+                <div class="checkList">
+                    <h3><i class="fas fa-check-circle"></i>Monitoramento de áreas</h3>
+                    <h3><i class="fas fa-check-circle"></i>Monitoramento do clima e queimadas em geral</h3>
+                    <h3><i class="fas fa-check-circle"></i>Alertas sobre invasões, desmatamentos e aproximação entre áreas</h3>
+                </div>
+
+                <div class="btn">
+                    <a class="btnBox" href="#boxContato">Solicitar Contato</a>
+                </div>
+            </section>
+        </div>
+
+        <div data-anime-segmentos="fad-in" id="segmentoTransporte" class="ocultar">
+            <section class="box2">
+                <h2 class="titulo">Segmentos de Atuação</h2>
+
+                <h2 class="tituloDestaque">Transporte</h2>
+
+                <p class="texto">Tenha informações sobre a situação das rodovias, áreas de preservação, erosões, invasão, clima e todos os fatores importantes para um melhor planejamento e tomada de decisão. Tudo isso no módulo Inovamaps Transporte.</p>
+
+                <div class="checkList">
+                    <h3><i class="fas fa-check-circle"></i>Monitoramento de áreas de rodovias</h3>
+                    <h3><i class="fas fa-check-circle"></i>Alertas sobre invasões, desmatamentos e erosões</h3>
+                    <h3><i class="fas fa-check-circle"></i>Monitoramento de queimadas e clima</h3>
+                </div>
+
+                <div class="btn">
+                    <a class="btnBox" href="#boxContato">Solicitar Contato</a>
+                </div>
+            </section>
+        </div>
+
+        <div data-anime-segmentos="fad-in" id="segmentoGas" class="ocultar">
+            <section class="box2">
+                <h2 class="titulo">Segmentos de Atuação</h2>
+
+                <h2 class="tituloDestaque">Óleo e Gás</h2>
+
+                <p class="texto">O módulo Inovamaps Óleo e Gás possibilita o monitoramento de plataformas, extensões de oleodutos e propriedades em geral. É possível detectar manchas de óleo, alterações nas áreas e gerar alertas de invasão de propriedade.</p>
+
+                <div class="checkList">
+                    <h3><i class="fas fa-check-circle"></i>Monitoramento grandes extensões de territórios, plataformas e oleodutos</h3>
+                    <h3><i class="fas fa-check-circle"></i>Monitoramento de queimadas em geral</h3>
+                    <h3><i class="fas fa-check-circle"></i>Alertas sobre invasões, desmatamentos e aproximação entre áreas</h3>
+                </div>
+
+                <div class="btn">
+                    <a class="btnBox" href="#boxContato">Solicitar Contato</a>
+                </div>
+            </section>
+        </div>
+
+        <div data-anime-segmentos="fad-in" id="segmentoGoverno" class="ocultar">
+            <section class="box2">
+                <h2 class="titulo">Segmentos de Atuação</h2>
+
+                <h2 class="tituloDestaque">Governo</h2>
+
+                <p class="texto">Gestor público, acompanhe a situação da sua cidade, monitore uma área específica ou gerencie uma crise através do módulo Inovamaps Governo. Tenha informações de imagens de satélite de alta precisão para auxiliar na tomada de decisão.</p>
+
+                <div class="checkList">
+                    <h3><i class="fas fa-check-circle"></i>Monitoramento de áreas e grandes extensões de territórios</h3>
+                    <h3><i class="fas fa-check-circle"></i>Monitoramento de barragens</h3>
+                    <h3><i class="fas fa-check-circle"></i>Alertas sobre invasões, desmatamentos e reflorestamentos</h3>
+                </div>
+
+                <div class="btn">
+                    <a class="btnBox" href="#boxContato">Solicitar Contato</a>
+                </div>
+            </section>
+        </div>
+
+    </div>
+
+    <!--Quarto Box-->
+    <div class="boxTelas">
+        <section class="box1">
+            <h2 class="tituloMenu">Inovamaps</h2>
+            <h1 class="tituloDestaque">Conheça Mais Sobre Essa Solução</h1>
+            <div class="texto">
+                <p>Monitore áreas e seja notificado caso seja</p>
+                <p>detectado algum problema no local</p>
+            </div>
+        </section>
+        <section class="box2">
+            <figure class="imagem">
+                <img src="img/tela1.jpg" alt="[Tela Principal Inovamaps]" title="Tela Principal Inovamaps">
+                <p>Tela principal do Inovamaps</p>
+            </figure>
+        </section>
+        <section class="box3">
+            <a href="#"><i class="fas fa-angle-left"></i></a>
+            <a href="#"><i class="fas fa-angle-right"></i></a>
+        </section>
+    </div>
     
+    <!--Quinto Box-->
+    <div class="boxNoticias">
+        <section class="box1">
+            <div class="boxTexto">
+                <h2 class="tituloDestaque">O que estão falando sobre a Geoinova e suas soluções.</h2>
+                <p class="texto">Veja as matérias e notícias que a imprensa divulgou sobre a Geoiniva e sua
+                    solução Inovamaps. Produto que tem gerado economia para grande indústrias. 
+                </p>
+            </div>
+            <div class="boxImagem">
+                <figure>
+                    <img src="img/investe.png" alt="[Logo Investe]" title="Logo Investe">
+                    <img src="img/portal-mineracao.png" alt="[Logo Portal Mineração]" title="Logo Portal Mineração">
+                    <img src="img/globo.png" alt="[Logo Globo.com]" title="Logo Globo.com">
+                </figure>
+            </div>
+        </section>
+            
+        <section class="box2">
+            <video controls src="https://geoinova.com.br/videos/video1.mp4"></video>
+            <a href="https://g1.globo.com/jornal-nacional/noticia/2019/01/11/de-olho-na-recuperacao-economia-empresas-buscam-jovens-boas-ideias.ghtml" target="_blank">Veja a matéria na íntegra</a>
+        </section>
+    </div>
+
+    <!--Sexto Box-->
+    <div class="boxSobre" id="boxSobre">
+        <section class="box1">
+            <h2 class="tituloMenu">Sobre</h2>
+            <h1 class="tituloDestaque">Saiba Mais Sobre A Geoinova</h1>
+            <div class="texto">
+                <p>Uma empresa especialista em desenvolver soluções inovadoras</p>
+                <p>com o uso de tecnologia de georreferenciamento</p>
+            </div>
+        </section>
+
+        <section class="box2">
+            <p class="texto">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Sed incidunt molestias reprehenderit accusantium, dolorum laboriosam sunt fuga aut.
+                Dolor numquam quam consequatur velit fugit reiciendis in eaque facere aliquam nihil. Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+                Sed incidunt molestias reprehenderit accusantium, dolorum laboriosam sunt fuga aut. Dolor numquam quam consequatur velit fugit reiciendis
+                in eaque facere aliquam nihil.</p>
+        </section>
+    </div>
+
+    <!--Setimo Box-->
+    <div class="boxContato" id="boxContato">
+        <section class="box1">
+            <div class="box">
+                <h2><i class="fas fa-phone"></i>Telefone</h2>
+                <p>+55 (62) 3225-1785</p>
+            </div>
+
+            <div class="box">
+                <h2><i class="fas fa-envelope"></i>Email</h2>
+                <p>contato@geoinova.com.br</p>
+            </div>
+
+            <div class="box">
+                <h2><i class="fas fa-map-marker-alt"></i>Endereço</h2>
+                <p>Av. do Comércio n25 - Ed. Concept Office Sala 1206 - Vila Maria José - Goiânia/GO</p>
+            </div>
+        </section>
+
+        <section class="box2">
+            <div class="boxMapa">
+                <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d61141.27272900718!2d-49.240862!3d-16.710401!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x611215d63801f6ee!2zR2VvaW5vdmEgU29sdcOnw7Vlcw!5e0!3m2!1spt-BR!2sus!4v1637692805723!5m2!1spt-BR!2sus" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+            </div>
+
+            <div class="boxFormulario">
+                <h2 class="tituloMenu">Contato</h2>
+                <h1 class="tituloDestaque">Quero Um Contato</h1>
+
+                <div class="formulario">
+                    <form action="">
+                        <div class="fundo">
+                            <input type="text" placeholder="Digite seu nome">
+                        </div>
+                        <div class="fundo">
+                            <input type="email" name="email" id="email" placeholder="Digite seu email">
+                        </div>
+                        <div class="fundo">
+                            <select name="assunto" id="assunto">
+                                <option value="Inovamaps">Inovamaps</option>
+                                <option value="Desenvolvimento de uma solução">Desenvolvimento de uma solução</option>
+                                <option value="Outro">Outro</option>
+                            </select>
+                        </div>
+                        <div class="fundo">
+                            <textarea name="mensagem" id="" cols="30" rows="6" placeholder="Digite um mensagem"></textarea>
+                        </div>
+                    </form>
+
+                    <div class="btn">
+                        <a href="#">Enviar mensagem</a>
+                    </div>
+                    
+                </div>
+            </div>
+        </section>
+    </div>
+
+    <!--Outavo Box-->
+    <div class="boxInscrevase">
+        <section class="box1">
+            <h2 class="tituloMenu">Inscrever</h2>
+
+            <h1 class="tituloDestaque">Fique Ligado</h1>
+
+            <p class="texto">Fique por dentro das novidades e informações sobre a Geoinova</p>
+        </section>
+
+        <section class="box2">
+            <form action="#">
+                <div class="fundo">
+                    <input class="inscricao" type="email" name="inscricao" id="" placeholder="Digite o seu melhor email"><a href="">Inscrever</a><i class="fas fa-paper-plane"></i>
+                </div>
+            </form>
+        </section>
+    </div>
+
+    <!--Rodape-->
+    <footer class="rodape">
+        <div class="midias">
+            <a href="https://www.facebook.com/geoinovasolucoes" target="_blank"><i class="fab fa-facebook-f"></i></a>
+            <a href="https://www.instagram.com/geoinovasolucoes/" target="_blank"><i class="fab fa-instagram"></i></a>
+            <a href="https://pt.linkedin.com/company/geoinova-solu-es" target="_blank"><i class="fab fa-linkedin-in"></i></a>
+        </div>
+
+        <div class="direitos">
+            <p>© 2021 Geoinova | Todos os direitos reservados.</p>
+        </div>
+    </footer>
+
+    <script src="js/jquery.js"></script>
+    <script src="js/index.js"></script>
 </body>
-<!--Importação do JS-->
-<script src="js/index.js"></script>
 </html>

@@ -1,0 +1,217 @@
+.boxSegmentos{
+    padding: 20px 60px 50px 60px;
+    display: inline-block;
+    
+}
+
+/*Comandos do Box1*/
+.boxSegmentos .box1{
+    width: 50%;
+    display: inline-flex;
+    float: left;
+    
+
+
+}
+
+.boxSegmentos .menuSegmentos{
+    text-align: center;
+    display: flex;
+}
+
+.boxSegmentos .box1 li{
+    
+    width: 90%;
+    height: 80px;
+    text-align: left;
+    border-radius: 5px;
+    background-color: white;
+    box-shadow: 1px 1px 10px rgba(0, 0, 0, 0.445);
+    margin-bottom: 20px;
+    color: #00cbe4;
+    cursor: pointer;
+
+    padding: 26px 23px
+}
+
+.boxSegmentos li a{
+    margin-left: 12px;
+    color: #443d3d;
+    text-transform: none;
+    font-family: 'Exo3';
+
+}
+
+.boxSegmentos i{
+    font-size: 30px;
+    color: #00cbe4;
+    
+}
+
+
+/*Comandos do Box2*/
+.boxSegmentos .box2{
+    width: 50%;
+    float: left;
+    padding-left: 20px;
+    height: 100%;
+    
+    
+}
+
+.boxSegmentos .titulo{
+    font-size: 18px;
+    color: #00cbe4;
+    text-transform: uppercase;
+}
+
+.boxSegmentos .tituloDestaque{
+    font-size: 40px;
+}
+
+.boxSegmentos .texto{
+    margin-top: 20px;
+    font-size: 14px;
+    line-height: 22px;
+}
+
+.boxSegmentos .checkList{
+    margin-top: 20px;
+    font-size: 13px;
+}
+
+.boxSegmentos .checkList i{
+    font-size: 20px;
+    margin-right: 10px;
+    margin-bottom: 10px;
+    border: solid 4px #00c9e49a;
+    border-radius: 100%;
+}
+
+.boxSegmentos .btn{
+    margin-top: 40px;
+    height: 40px;
+}
+
+.boxSegmentos .btnBox{
+    margin: 0;
+    padding: 0;
+    padding: 12px 25px 12px 25px;
+    border: solid 1px #00cbe4;
+    border-radius: 5px;
+    color: white;
+    text-transform: uppercase;
+    font-size: 14px;
+    background-image: linear-gradient(to right, #00cbe4, #00ecff); /*efeito degradé*/
+    
+}
+
+/*Animações*/
+[data-anime-segmentos].ocultar{
+    display: none;
+    transition: 1s;
+    opacity: 0;
+}
+
+[data-anime-segmentos].mostrar{
+    display: block;
+    opacity: 1;
+    transform: translate3d(0, 0, 0);
+    transition: all 1s;
+
+}
+
+[data-anime-solucoes='fad-in']{
+    transform: translate3d(50px, 0, 0);
+    transition: all 1s;
+}
+
+[data-menu='menuSegmentos'].selecao{
+    background-image: linear-gradient(to right, #00cbe4, #00ecff); /*efeito degradé*/
+}
+
+[data-menu='menuSegmentos'].selecao a, [data-menu='menuSegmentos'].selecao i{
+    color: white;
+}
+
+
+[data-menu='menuSegmentos'].naoSelecao{
+    background-color: white;
+}
+
+[data-menu='menuSegmentos'].naoSelecao a{
+    color: #443d3d;
+}
+
+[data-menu='menuSegmentos'].naoSelecao i{
+    color: #00cbe4;
+}
+
+/*Comandos media query*/
+@media (max-width: 1100px){
+    .boxSegmentos{
+        transition: 1s;
+        display: inline-block;
+    }
+
+    .boxSegmentos .box1{
+        margin: 0;
+        padding: 0;
+        float: none;
+        width: 100%;
+        transition: 1s;
+        
+    }
+
+    .boxSegmentos .menuSegmentos{
+        text-align: center;
+        display: block;
+        width: 100%;
+    }
+
+    .boxSegmentos .box1 .menu1, .boxSegmentos .box1 .menu2{
+        display: flex;
+       
+    }
+
+    .boxSegmentos .box2{
+        margin: 0;
+        padding: 0;
+        float: none;
+        width: 100%;
+        transition: 1s;
+    }
+
+    .boxSegmentos .box1 li{
+        display: inline-flex;
+        float: left;
+        margin-left: 20px;
+        transition: 1s;
+    }
+}
+
+@media (max-width: 1000px){
+
+    .boxSegmentos .menuSegmentos{
+        text-align: center;
+        width: 100%;
+    }
+
+    .boxSegmentos .box1 .menu1, .boxSegmentos .box1 .menu2{
+        display: block;
+        width: 100%;
+    }
+}
+
+@media (max-width: 550px){
+    .boxSegmentos{
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+
+    .box1, .menu1, .box1 .menu2{
+        margin: 0;
+        padding: 0;
+        padding-right: 20px;
+    }
+}
