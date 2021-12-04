@@ -9,9 +9,6 @@
     width: 50%;
     display: inline-flex;
     float: left;
-    
-
-
 }
 
 .boxSegmentos .menuSegmentos{
@@ -34,13 +31,15 @@
     padding: 26px 23px
 }
 
+
+
 .boxSegmentos li a{
     margin-left: 12px;
     color: #443d3d;
     text-transform: none;
     font-family: 'Exo3';
-
 }
+
 
 .boxSegmentos i{
     font-size: 30px;

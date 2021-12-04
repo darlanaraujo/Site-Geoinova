@@ -93,11 +93,14 @@
     text-align: center;
 }
 
-.boxContato .btn a{
+.boxContato .btn .btnForm{
     background-image: linear-gradient(to right, #00cbe4, #00ecff);
     padding: 10px 30px 10px 30px;
     color: white;
+    width: 300px;
+    text-transform: uppercase;
     border-radius: 5px;
+    cursor: pointer;
 }
 
 /*Comando media query*/

@@ -18,6 +18,10 @@
     <link rel="stylesheet" href="css/estilo-oitavoBox.css">
     <link rel="stylesheet" href="css/estilo-footer.css">
 
+    <!--Importação do JS-->
+    <script src="js/jquery.js" defer></script>
+    <script src="js/index.js" defer></script>
+
     <!--Importação de fonte do Google-->
     <link href="https://fonts.googleapis.com/css2?family=Exo+2:wght@300&display=swap" rel="stylesheet">
 
@@ -509,15 +513,46 @@
                 <p>detectado algum problema no local</p>
             </div>
         </section>
-        <section class="box2">
-            <figure class="imagem">
-                <img src="img/tela1.jpg" alt="[Tela Principal Inovamaps]" title="Tela Principal Inovamaps">
-                <p>Tela principal do Inovamaps</p>
-            </figure>
-        </section>
+
+        <div data-telas="pai">
+            <section data-telas="imagem" class="ocultar">
+                <figure class="imagem">
+                    <img src="img/tela1.jpg" alt="[Tela Principal Inovamaps]" title="Tela Principal Inovamaps">
+                    <p>Tela principal do Inovamaps</p>
+                </figure>
+            </section>
+
+            <section data-telas="imagem" class="ocultar">
+                <figure class="imagem">
+                    <img src="img/tela2.jpg" alt="[Tela de Áreas com Alertas]" title="Tela de Áreas com Alertas">
+                    <p>Áreas com alertas detectado em uma região</p>
+                </figure>
+            </section>
+
+            <section data-telas="imagem" class="ocultar">
+                <figure class="imagem">
+                    <img src="img/tela3.jpg" alt="[Tela de Comparação]" title="Tela de Comparação">
+                    <p>Comparação de uma área com imagens de satélite do antes e depois</p>
+                </figure>
+            </section>
+
+            <section data-telas="imagem" class="ocultar">
+                <figure class="imagem">
+                    <img src="img/tela4.jpg" alt="[Tela de Relatório]" title="Tela de Relatório">
+                    <p>Relatório impresso em pdf ou png com escala</p>
+                </figure>
+            </section>
+
+            <section data-telas="imagem" class="ocultar">
+                <figure class="imagem">
+                    <img src="img/tela5.jpg" alt="[Tela de Infravermelho]" title="Tela de Infravermelho">
+                    <p>Comparação de antes e depois através de infravermelho</p>
+                </figure>
+            </section>
+        </div>
         <section class="box3">
-            <a href="#"><i class="fas fa-angle-left"></i></a>
-            <a href="#"><i class="fas fa-angle-right"></i></a>
+            <a id="btnBack" href="#boxTelas"><i class="fas fa-angle-left"></i></a>
+            <a id="btnNext" href="#boxTelas"><i class="fas fa-angle-right"></i></a>
         </section>
     </div>
     
@@ -531,11 +566,28 @@
                 </p>
             </div>
             <div class="boxImagem">
-                <figure>
+               
+                <div class="carrossel">
+                    <div class="container" id="img">
+                        <img src="img/investe.png" alt="[Logo Investe]" title="Logo Investe">
+                        <img src="img/portal-mineracao.png" alt="[Logo Portal Mineração]" title="Logo Portal Mineração">
+                        <img src="img/globo.png" alt="[Logo Globo.com]" title="Logo Globo.com">
+                        <img src="img/startse.png" alt="[Logo Startse]" title="Startse">
+                        <img src="img/abdi.png" alt="[Logo ABDI]" title="Logo ABDI">
+                        <img src="img/computerworld.png" alt="[Logo ComputerWrod]" title="Logo ComputerWord">
+                        <img src="img/valor.png" alt="[Logo Valor]" title="Logo Valor">
+                    </div>
+                </div>
+               
+               
+               
+                <!--
+                    <figure>
                     <img src="img/investe.png" alt="[Logo Investe]" title="Logo Investe">
                     <img src="img/portal-mineracao.png" alt="[Logo Portal Mineração]" title="Logo Portal Mineração">
                     <img src="img/globo.png" alt="[Logo Globo.com]" title="Logo Globo.com">
                 </figure>
+                -->
             </div>
         </section>
             
@@ -595,10 +647,10 @@
                 <div class="formulario">
                     <form action="">
                         <div class="fundo">
-                            <input type="text" placeholder="Digite seu nome">
+                            <input id="nome" type="text" placeholder="Digite seu nome" required='required'>
                         </div>
                         <div class="fundo">
-                            <input type="email" name="email" id="email" placeholder="Digite seu email">
+                            <input type="email" name="email" id="email" placeholder="Digite seu email" required='required'>
                         </div>
                         <div class="fundo">
                             <select name="assunto" id="assunto">
@@ -608,20 +660,20 @@
                             </select>
                         </div>
                         <div class="fundo">
-                            <textarea name="mensagem" id="" cols="30" rows="6" placeholder="Digite um mensagem"></textarea>
+                            <textarea name="mensagem" id="msg" cols="30" rows="6" placeholder="Digite um mensagem" required='required'></textarea>
+                        </div>
+
+                        <div class="btn">
+                            <input class="btnForm" id="btnForm" type="submit" value="Enviar Mensagem">
                         </div>
                     </form>
-
-                    <div class="btn">
-                        <a href="#">Enviar mensagem</a>
-                    </div>
                     
                 </div>
             </div>
         </section>
     </div>
 
-    <!--Outavo Box-->
+    <!--Oitavo Box-->
     <div class="boxInscrevase">
         <section class="box1">
             <h2 class="tituloMenu">Inscrever</h2>
@@ -634,7 +686,13 @@
         <section class="box2">
             <form action="#">
                 <div class="fundo">
-                    <input class="inscricao" type="email" name="inscricao" id="" placeholder="Digite o seu melhor email"><a href="">Inscrever</a><i class="fas fa-paper-plane"></i>
+
+                    <input class="inscricao" type="email" name="inscricao" id="inscricao" placeholder="Digite o seu melhor email" required='required'><a id="btnInscricao" href="#boxInscrevase">Inscrever</a><i id="btnInscricao2" class="fas fa-paper-plane"></i>
+                    
+
+                    <!--
+                    <input class="inscricao" type="email" name="inscricao" id="inscricao" placeholder="Digite o seu melhor email"><input class="btnForm" id="btnForm" type="submit" value="Inscrever"><i class="fas fa-paper-plane"></i>
+                    -->
                 </div>
             </form>
         </section>
@@ -653,7 +711,5 @@
         </div>
     </footer>
 
-    <script src="js/jquery.js"></script>
-    <script src="js/index.js"></script>
 </body>
 </html>

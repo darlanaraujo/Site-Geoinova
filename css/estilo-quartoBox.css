@@ -19,7 +19,9 @@
     margin-bottom: 50px;
 }
 
-.boxTelas .box2 .imagem{
+
+
+.boxTelas .imagem{
     background-color: white;
     margin: 0;
     padding: 0;
@@ -31,6 +33,7 @@
 
 .boxTelas .box3{
     margin-top: 40px;
+    
 }
 
 .boxTelas .box3 a{
@@ -45,6 +48,29 @@
     font-size: 25px;
     vertical-align: middle;
 }
+
+/*Animações*/
+[data-telas]{
+    width: 100%;
+    text-align: center;
+    
+}
+
+[data-telas].ocultar{
+    opacity: 0;
+    transition: 1s;
+    transform: translate3d(50px, 0, 0);
+    display: none;
+}
+
+[data-telas].mostrar{
+    opacity: 1;
+    transition: 1s;
+    transform: translate3d(0px, 0, 0);
+    display: block;
+    
+}
+
 
 /*Comandos media query*/
 @media (max-width: 550px){
